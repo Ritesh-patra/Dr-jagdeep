@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Jagadeesh Kumar - Modern Healthcare Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#be123c',
+                        'accent': '#ec4899',
+                        'soft-pink': '#fdf2f8',
+                        'slate-text': '#475569'
+                    },
+                    fontFamily: {
+                        'heading': ['Montserrat', 'sans-serif'],
+                        'body': ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-soft-pink text-slate-text font-body overflow-x-hidden">
+    <!-- Completely new mobile-first header design -->
+    <header class="bg-white/95 backdrop-blur-md shadow-lg sticky top-0 z-50 border-b border-pink-100">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center shadow-lg">
+                        <i class="fas fa-heartbeat text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-lg font-heading font-bold text-slate-text">Dr. Jagadeesh Kumar</h1>
+                        <p class="text-xs text-accent font-medium">Healthcare Expert</p>
+                    </div>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden bg-primary text-white p-2 rounded-xl">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="#home" class="text-slate-text hover:text-primary transition-colors font-medium">Home</a>
+                    <a href="#about" class="text-slate-text hover:text-primary transition-colors font-medium">About</a>
+                    <a href="#services" class="text-slate-text hover:text-primary transition-colors font-medium">Services</a>
+                    <a href="#contact" class="text-slate-text hover:text-primary transition-colors font-medium">Contact</a>
+                </nav>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-pink-100 pt-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-slate-text hover:text-primary transition-colors font-medium py-2">🏠 Home</a>
+                    <a href="#about" class="text-slate-text hover:text-primary transition-colors font-medium py-2">👨‍⚕️ About</a>
+                    <a href="#services" class="text-slate-text hover:text-primary transition-colors font-medium py-2">🏥 Services</a>
+                    <a href="#contact" class="text-slate-text hover:text-primary transition-colors font-medium py-2">📞 Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- New mobile-optimized hero section with multiple images -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-soft-pink"></div>
+        <div class="absolute top-10 left-10 w-20 h-20 bg-accent/20 rounded-full blur-xl animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-primary/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+        
+        <div class="container mx-auto px-4 pt-20 py-5 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <!-- Doctor Image -->
+                <div class="mb-8 flex justify-center">
+                    <div class="relative">
+                        <img src="images/doctor.jpg" 
+                             alt="Dr. Jagadeesh Kumar" 
+                             class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover shadow-2xl border-4 border-white float-animation">
+                        <div class="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-lg pulse-glow">
+                            <i class="fas fa-stethoscope text-white text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-heading font-black text-slate-text mb-6 text-balance leading-tight">
+                    Modern Healthcare
+                    <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Solutions</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl lg:text-2xl text-slate-text/80 mb-8 text-pretty font-light leading-relaxed max-w-3xl mx-auto">
+                    Experience personalized medical care with over 10+ years of expertise in diabetes, hypertension, and preventive medicine
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <button class="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-2xl font-heading font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
+                        <i class="fas fa-calendar-plus mr-2"></i>
+                        Book Consultation
+                    </button>
+                    <button class="border-2 border-primary text-primary px-8 py-4 rounded-2xl font-heading font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300 w-full sm:w-auto">
+                        <i class="fas fa-phone mr-2"></i>
+                        Emergency Call
+                    </button>
+                </div>
+
+                <!-- Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                    <div class="text-center">
+                        <div class="text-2xl md:text-3xl font-heading font-black text-primary mb-1">10+</div>
+                        <div class="text-sm text-slate-text/70 font-medium">Years Experience</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl md:text-3xl font-heading font-black text-accent mb-1">24/7</div>
+                        <div class="text-sm text-slate-text/70 font-medium">Available</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl md:text-3xl font-heading font-black text-primary mb-1">1000+</div>
+                        <div class="text-sm text-slate-text/70 font-medium">Patients Treated</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl md:text-3xl font-heading font-black text-accent mb-1">98%</div>
+                        <div class="text-sm text-slate-text/70 font-medium">Success Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New about section with medical images -->
+    <section id="about" class="py-20 bg-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-accent to-primary"></div>
+        
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
+                    Meet Your <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Healthcare Partner</span>
+                </h2>
+                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto text-pretty">
+                    Dedicated to providing exceptional medical care with a personal touch
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div class="space-y-6">
+                    <div class="bg-gradient-to-br from-soft-pink to-white p-8 rounded-3xl shadow-xl">
+                        <h3 class="text-2xl font-heading font-bold text-slate-text mb-4">
+                            <i class="fas fa-graduation-cap text-primary mr-3"></i>
+                            Professional Qualifications
+                        </h3>
+                        <p class="text-slate-text/80 leading-relaxed mb-6">
+                            B.S (General Medicine) with specialized training in chronic disease management, preventive care, and geriatric medicine. Committed to evidence-based treatment approaches.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-primary text-sm"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-text">10+ Years Experience</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-accent text-sm"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-text">Certified Specialist</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-primary/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-primary text-sm"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-text">Preventive Medicine</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-8 h-8 bg-accent/20 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-accent text-sm"></i>
+                                </div>
+                                <span class="text-sm font-medium text-slate-text">Chronic Care Expert</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="space-y-4">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             alt="Medical Clinic" 
+                             class="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <img src="/placeholder.svg?height=150&width=300" 
+                             alt="Medical Equipment" 
+                             class="w-full h-36 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    </div>
+                    <div class="space-y-4 mt-8">
+                        <img src="/placeholder.svg?height=150&width=300" 
+                             alt="Doctor Consultation" 
+                             class="w-full h-36 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             alt="Medical Testing" 
+                             class="w-full h-48 object-cover rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New expertise section with medical specialty images -->
+    <section class="py-20 bg-gradient-to-br from-soft-pink via-white to-soft-pink">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
+                    Medical <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Specializations</span>
+                </h2>
+                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto text-pretty">
+                    Comprehensive healthcare across multiple medical disciplines
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                <!-- Fever Management -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="mb-6">
+                        <img src="https://i.pinimg.com/1200x/4e/95/83/4e958394fe29318dcc34294e7ad47f20.jpg" 
+                             alt="Fever Management" 
+                             class="w-full h-40 object-cover rounded-2xl mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fas fa-thermometer-half text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Fever Management</h3>
+                    <p class="text-slate-text/70 text-center leading-relaxed">Expert diagnosis and treatment of various fever conditions with comprehensive care approach and rapid recovery protocols.</p>
+                </div>
+
+                <!-- Diabetes Care -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="mb-6">
+                        <img src="https://i.pinimg.com/736x/34/ac/56/34ac563237fcb55d32fe13ba011fad72.jpg" 
+                             alt="Diabetes Care" 
+                             class="w-full h-40 object-cover object-top rounded-2xl mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fas fa-tint text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Diabetes Care</h3>
+                    <p class="text-slate-text/70 text-center leading-relaxed">Comprehensive diabetes management including lifestyle counseling, medication optimization, and continuous monitoring.</p>
+                </div>
+
+                <!-- Hypertension -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="mb-6">
+                        <img src="https://i.pinimg.com/736x/c3/e1/02/c3e1021bd094f87512b05df4e74a1c30.jpg" 
+                             alt="Hypertension Care" 
+                             class="w-full h-40 object-cover rounded-2xl mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fas fa-heartbeat text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Hypertension</h3>
+                    <p class="text-slate-text/70 text-center leading-relaxed">Advanced hypertension management with personalized treatment plans, lifestyle modifications, and regular monitoring.</p>
+                </div>
+
+                <!-- Thyroid Disorders -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="mb-6">
+                        <img src="https://i.pinimg.com/736x/89/cc/e5/89cce5b091f14e3b7fc98d12f88e943e.jpg" 
+                             alt="Thyroid Care" 
+                             class="w-full h-40 object-cover rounded-2xl mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fas fa-shield-alt text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Thyroid Disorders</h3>
+                    <p class="text-slate-text/70 text-center leading-relaxed">Specialized care for thyroid conditions with hormonal balance management and comprehensive treatment protocols.</p>
+                </div>
+
+                <!-- Geriatric Medicine -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="mb-6">
+                        <img src="https://i.pinimg.com/736x/02/b7/75/02b77557b9da48eb229522c9eae876e3.jpg" 
+                             alt="Geriatric Care" 
+                             class="w-full h-40 object-cover rounded-2xl mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fas fa-user-friends text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Geriatric Medicine</h3>
+                    <p class="text-slate-text/70 text-center leading-relaxed">Specialized healthcare for elderly patients with age-related medical conditions and comprehensive wellness programs.</p>
+                </div>
+
+                <!-- Metabolic Syndromes -->
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
+                    <div class="mb-6">
+                        <img src="https://i.pinimg.com/736x/cb/56/d9/cb56d971b43a4552f97f71aa422ca831.jpg" 
+                             alt="Metabolic Care" 
+                             class="w-full h-40 object-cover rounded-2xl mb-4">
+                        <div class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
+                            <i class="fas fa-dna text-white text-2xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Metabolic Syndromes</h3>
+                    <p class="text-slate-text/70 text-center leading-relaxed">Comprehensive management of metabolic disorders, hormonal imbalances, and lifestyle-related conditions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New services section with service images -->
+    <section id="services" class="py-20 bg-white relative">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
+                    Healthcare <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Services</span>
+                </h2>
+                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto text-pretty">
+                    Comprehensive medical services available 24/7 for your convenience
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+                <!-- DIGICLINIX PHARMACY -->
+                <div class="bg-gradient-to-br from-white to-soft-pink rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group text-center">
+                    <img src="https://i.pinimg.com/736x/1f/96/4a/1f964aa8fdb717a53a366c11896f3df0.jpg" 
+                         alt="Digital Pharmacy" 
+                         class="w-full relative h-60 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4">DIGICLINIX PHARMACY</h3>
+                    <p class="text-slate-text/70 mb-6 leading-relaxed">Online pharmacy with 24x7 ordering and home delivery services for all your medication needs.</p>
+                    <button class="bg-gradient-to-r from-primary to-accent text-white px-6 py-3 rounded-2xl font-heading font-bold hover:shadow-lg transition-all duration-300 w-full">
+                        Order Online <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Virtual Consultations -->
+                <div class="bg-gradient-to-br from-white to-soft-pink rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group text-center">
+                    <img src="https://i.pinimg.com/1200x/c6/43/37/c643374a8ed950b8ddc2c19a8eb0d436.jpg" 
+                         alt="Virtual Consultation" 
+                         class="w-full h-60 object-cover rounded-2xl mb-6">
+                
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4">Virtual Consultations</h3>
+                    <p class="text-slate-text/70 mb-6 leading-relaxed">Online and in-person consultations available through our secure virtual clinic platform.</p>
+                    <button class="bg-gradient-to-r from-accent to-pink-500 text-white px-6 py-3 rounded-2xl font-heading font-bold hover:shadow-lg transition-all duration-300 w-full">
+                        Book Now <i class="fas fa-arrow-right ml-2"></i>
+                    </button>
+                </div>
+
+                <!-- Orange Health Tests -->
+                <div class="bg-gradient-to-br from-white to-soft-pink rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group text-center">
+                    <img src="https://i.pinimg.com/736x/ee/af/46/eeaf464d69d66ab0ba52c0ca47b5de52.jpg" 
+                         alt="Medical Testing" 
+                         class="w-full h-60 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4">Orange Health Tests</h3>
+                    <p class="text-slate-text/70 mb-6 leading-relaxed">Home sample collection within 60 mins in Hyderabad, Delhi, Bangalore with accurate results.</p>
+                    <a href="https://web.orangehealth.in/public/order?partner_code=D1mGqvgqmlgoja1L&is_redirected=true" class="bg-gradient-to-r from-orange-400 to-orange-600 text-white px-6 py-3 rounded-2xl font-heading font-bold hover:shadow-lg transition-all duration-300 w-full">
+                        Book Test <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Diet Planning -->
+                <div class="bg-gradient-to-br from-white to-soft-pink rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group text-center">
+                    <img src="https://i.pinimg.com/736x/41/a0/00/41a000a748f636a919c45fdb999b646c.jpg" 
+                         alt="Diet Planning" 
+                         class="w-full h-60 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4">Diet Planning</h3>
+                    <p class="text-slate-text/70 mb-6 leading-relaxed">Personalized diet plans with calorie counter and nutritional guidance for optimal health.</p>
+                    <a href="https://clearcals.com/" class="bg-gradient-to-r from-green-400 to-green-600 text-white px-6 py-3 rounded-2xl font-heading font-bold hover:shadow-lg transition-all duration-300 w-full">
+                        Get Plan <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New health camp section with community images -->
+    <section class="py-20 bg-gradient-to-br from-primary via-accent to-primary text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-10 right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black mb-4">
+                    Community Health <span class="text-yellow-300">Programs</span>
+                </h2>
+                <p class="text-xl text-white/90 max-w-2xl mx-auto text-pretty">
+                    Regular health camps for community wellness and preventive healthcare initiatives
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="https://i.pinimg.com/1200x/79/a3/fb/79a3fb36ccec7962302f07800364f7c7.jpg" 
+                         alt="Health Camp" 
+                         class="w-full h-32 object-cover rounded-2xl mb-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-calendar-check text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold">Health Camp Offers</h3>
+                    </div>
+                    <p class="text-white/90 leading-relaxed">
+                        Regular health screening camps with comprehensive check-ups, consultations, and health awareness programs at affordable rates for the community.
+                    </p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    <img src="/placeholder.svg?height=120&width=200" 
+                         alt="Health Enquiry" 
+                         class="w-full h-32 object-cover rounded-2xl mb-6">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
+                            <i class="fas fa-question-circle text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-heading font-bold">Health Camp Enquiry</h3>
+                    </div>
+                    <p class="text-white/90 leading-relaxed">
+                        Get information about upcoming health camps, register for community health programs, and participate in wellness initiatives.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New testimonials section with patient images -->
+    <section class="py-20 bg-soft-pink">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
+                    Patient <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Testimonials</span>
+                </h2>
+                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto text-pretty">
+                    Real stories from patients who experienced exceptional care
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="Patient" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-text">Priya Sharma</h4>
+                            <p class="text-sm text-slate-text/70">Diabetes Patient</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-slate-text/80 leading-relaxed">
+                        "Dr. Jagadeesh's comprehensive approach to diabetes management has transformed my life. His personalized care and regular monitoring helped me achieve better blood sugar control."
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="Patient" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-text">Rajesh Kumar</h4>
+                            <p class="text-sm text-slate-text/70">Hypertension Patient</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-slate-text/80 leading-relaxed">
+                        "Excellent doctor with great expertise in hypertension management. The virtual consultations are convenient and the treatment plan is very effective."
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
+                    <div class="flex items-center mb-6">
+                        <img src="/placeholder.svg?height=60&width=60" 
+                             alt="Patient" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-heading font-bold text-slate-text">Lakshmi Devi</h4>
+                            <p class="text-sm text-slate-text/70">Geriatric Care</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-slate-text/80 leading-relaxed">
+                        "Dr. Jagadeesh provides compassionate care for elderly patients. His understanding of geriatric medicine and patient approach is exceptional."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New contact section with clinic images -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
+                    Get In <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Touch</span>
+                </h2>
+                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto text-pretty">
+                    Ready to take control of your health? Contact us today for expert medical care
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <img src="/placeholder.svg?height=150&width=250" 
+                             alt="Clinic Reception" 
+                             class="w-full h-40 object-cover rounded-2xl shadow-lg">
+                        <img src="/placeholder.svg?height=150&width=250" 
+                             alt="Consultation Room" 
+                             class="w-full h-40 object-cover rounded-2xl shadow-lg">
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center p-6 bg-gradient-to-r from-soft-pink to-white rounded-2xl shadow-lg">
+                            <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">24/7 Emergency</h4>
+                                <p class="text-slate-text/70">Available for urgent consultations and medical emergencies</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center p-6 bg-gradient-to-r from-soft-pink to-white rounded-2xl shadow-lg">
+                            <div class="w-16 h-16 bg-gradient-to-br from-accent to-pink-500 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">Email Consultation</h4>
+                                <p class="text-slate-text/70">Quick response guaranteed within 2 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center p-6 bg-gradient-to-r from-soft-pink to-white rounded-2xl shadow-lg">
+                            <div class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">Service Areas</h4>
+                                <p class="text-slate-text/70">Hyderabad, Delhi, Bangalore - Home visits available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-gradient-to-br from-white to-soft-pink rounded-3xl p-8 shadow-2xl">
+                    <h3 class="text-2xl font-heading font-bold text-slate-text mb-8 text-center">Quick Consultation Request</h3>
+                    <form class="space-y-6" id="contact-form">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" required
+                                   class="w-full px-6 py-4 border-2 border-pink-100 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-body">
+                            <input type="email" placeholder="Your Email" required
+                                   class="w-full px-6 py-4 border-2 border-pink-100 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-body">
+                        </div>
+                        <input type="tel" placeholder="Phone Number" required
+                               class="w-full px-6 py-4 border-2 border-pink-100 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-body">
+                        <select required class="w-full px-6 py-4 border-2 border-pink-100 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-body">
+                            <option value="">Select Service</option>
+                            <option value="general">General Consultation</option>
+                            <option value="diabetes">Diabetes Management</option>
+                            <option value="hypertension">Hypertension Care</option>
+                            <option value="thyroid">Thyroid Treatment</option>
+                            <option value="geriatric">Geriatric Medicine</option>
+                            <option value="health-camp">Health Camp Enquiry</option>
+                            <option value="health-camp">Other</option>
+                        </select>
+                        <textarea placeholder="Describe your health concern..." rows="4" required
+                                  class="w-full px-6 py-4 border-2 border-pink-100 rounded-2xl focus:ring-2 focus:ring-primary focus:border-primary transition-all duration-300 font-body resize-none"></textarea>
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-primary to-accent text-white py-4 rounded-2xl font-heading font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Consultation Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New footer with medical imagery -->
+    <footer class="bg-gradient-to-br from-slate-800 to-slate-900 text-white py-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Doctor Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center space-x-4 mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center">
+                            <i class="fas fa-heartbeat text-white text-2xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-heading font-bold">Dr. Jagadeesh Kumar</h3>
+                            <p class="text-white/70">Healthcare Excellence</p>
+                        </div>
+                    </div>
+                    <p class="text-white/80 leading-relaxed mb-6 max-w-md">
+                        Providing comprehensive healthcare with over 10+ years of medical experience. Committed to your health and wellness journey with personalized care and modern treatment approaches.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f text-white"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in text-white"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-xl font-heading font-bold mb-6">Medical Services</h4>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="#" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>General Medicine</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Diabetes Care</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Hypertension</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Thyroid Treatment</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Geriatric Medicine</a></li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-heading font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-white/80">
+                        <li><a href="#home" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Home</a></li>
+                        <li><a href="#about" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>About Doctor</a></li>
+                        <li><a href="#services" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Services</a></li>
+                        <li><a href="#contact" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Contact</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors flex items-center"><i class="fas fa-chevron-right text-xs mr-2"></i>Health Camps</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="border-t border-white/20 pt-8 text-center">
+                <p class="text-white/70 mb-4">
+                    © 2024 Dr. Jagadeesh Kumar Kanukuntla. All rights reserved. | Professional Medical Services
+                </p>
+                <p class="text-white/60 text-sm">
+                    Licensed Medical Practitioner | B.S (General Medicine) | 10+ Years Experience
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile-first bottom navigation for easy access -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-pink-100 lg:hidden z-50">
+        <div class="grid grid-cols-4 gap-1 p-2">
+            <a href="#home" class="flex flex-col items-center py-2 px-1 text-slate-text hover:text-primary transition-colors">
+                <i class="fas fa-home text-lg mb-1"></i>
+                <span class="text-xs font-medium">Home</span>
+            </a>
+            <a href="#services" class="flex flex-col items-center py-2 px-1 text-slate-text hover:text-primary transition-colors">
+                <i class="fas fa-stethoscope text-lg mb-1"></i>
+                <span class="text-xs font-medium">Services</span>
+            </a>
+            <a href="#contact" class="flex flex-col items-center py-2 px-1 text-slate-text hover:text-primary transition-colors">
+                <i class="fas fa-calendar-plus text-lg mb-1"></i>
+                <span class="text-xs font-medium">Book</span>
+            </a>
+            <a href="tel:+91" class="flex flex-col items-center py-2 px-1 text-slate-text hover:text-primary transition-colors">
+                <i class="fas fa-phone text-lg mb-1"></i>
+                <span class="text-xs font-medium">Call</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Enhanced JavaScript with mobile optimizations -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Smooth scrolling for all navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerHeight = 80;
+                    const targetPosition = target.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                    const icon = mobileMenuBtn.querySelector('i');
+                    icon.classList.add('fa-bars');
+                    icon.classList.remove('fa-times');
+                }
+            });
+        });
+
+        // Enhanced form submission with validation
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation
+            const inputs = this.querySelectorAll('input[required], select[required], textarea[required]');
+            let isValid = true;
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.classList.add('border-red-400');
+                    input.classList.remove('border-pink-100');
+                } else {
+                    input.classList.remove('border-red-400');
+                    input.classList.add('border-pink-100');
+                }
+            });
+            
+            if (isValid) {
+                // Show success message
+                const button = this.querySelector('button[type="submit"]');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-2"></i>Request Sent Successfully!';
+                button.classList.add('bg-green-500');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('bg-green-500');
+                    this.reset();
+                }, 3000);
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all animated elements
+        document.querySelectorAll('.bg-white.rounded-3xl, .bg-gradient-to-br').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(30px)';
+            element.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(element);
+        });
+
+        // Header scroll effect
+        let lastScrollY = window.scrollY;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+                header.classList.add('shadow-2xl');
+            } else {
+                header.classList.remove('shadow-2xl');
+            }
+            
+            // Hide/show header on mobile based on scroll direction
+            if (window.innerWidth <= 1024) {
+                if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                    header.style.transform = 'translateY(-100%)';
+                } else {
+                    header.style.transform = 'translateY(0)';
+                }
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Add loading animation
+        window.addEventListener('load', () => {
+            document.body.classList.add('loaded');
+        });
+
+        // Touch-friendly interactions for mobile
+        if ('ontouchstart' in window) {
+            document.querySelectorAll('.hover\\:shadow-2xl').forEach(element => {
+                element.addEventListener('touchstart', function() {
+                    this.classList.add('shadow-2xl');
+                });
+                element.addEventListener('touchend', function() {
+                    setTimeout(() => {
+                        this.classList.remove('shadow-2xl');
+                    }, 150);
+                });
+            });
+        }
+
+        // Performance optimization: Lazy load images
+        if ('IntersectionObserver' in window) {
+            const imageObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src || img.src;
+                        img.classList.remove('opacity-0');
+                        imageObserver.unobserve(img);
+                    }
+                });
+            });
+
+            document.querySelectorAll('img').forEach(img => {
+                img.classList.add('opacity-0', 'transition-opacity', 'duration-500');
+                setTimeout(() => img.classList.remove('opacity-0'), 100);
+            });
+        }
+
+        console.log('[v0] Mobile-first doctor consultation website loaded successfully');
+    </script>
+</body>
+</html>
