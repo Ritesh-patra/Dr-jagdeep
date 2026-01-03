@@ -42,6 +42,30 @@
         scrollbar-width: none;
         /* Firefox */
     }
+
+    /* Custom Connector Lines for Desktop */
+        @media (min-width: 1024px) {
+            .connector-left::after {
+                content: '';
+                position: absolute;
+                right: -2rem; 
+                top: 50%;
+                width: 2rem;
+                height: 2px;
+                background-color: #94a3b8; /* Slate-400 */
+                z-index: -1;
+            }
+            .connector-right::before {
+                content: '';
+                position: absolute;
+                left: -2rem; 
+                top: 50%;
+                width: 2rem;
+                height: 2px;
+                background-color: #94a3b8;
+                z-index: -1;
+            }
+        }
 </style>
 
 <body class="bg-soft-pink text-slate-text font-body overflow-x-hidden">
@@ -676,11 +700,133 @@
 
             </div>
         </div>
-    </section>
+    </section> 
 
+<div class="max-w-7xl w-full mx-auto py-10">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative">
+
+            <div class="flex flex-col gap-6 order-2 lg:order-1">
+                
+                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-droplet text-purple-900 text-xl"></i>
+                    </div>
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Diabetes</h3>
+                        <p class="text-xs text-pink-200">(Sugar)</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-head-side-mask text-red-500 text-xl"></i>
+                    </div>
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Thyroid</h3>
+                        <p class="text-xs text-pink-200">Problems</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-person-pregnant text-orange-500 text-xl"></i>
+                    </div>
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Sugar & BP</h3>
+                        <p class="text-xs text-pink-200">In Pregnancy</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-heart-pulse text-red-600 text-xl"></i>
+                    </div>
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Heart</h3>
+                        <p class="text-xs text-pink-200">Problems</p>
+                    </div>
+                </div>
+
+                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-brain text-blue-500 text-xl"></i>
+                    </div>
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Neuro</h3>
+                        <p class="text-xs text-pink-200">Problems</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="order-1 lg:order-2 flex justify-center z-20">
+                <div class="w-64 h-64 bg-[#2E1A5B] rounded-full border-4 border-cyan-200 shadow-xl flex flex-col items-center justify-center text-center p-4">
+                    <h1 class="text-white text-xl font-bold leading-tight">GENERAL PHYSICIAN</h1>
+                    <div class="w-16 h-0.5 bg-gray-400 my-2"></div>
+                    <p class="text-cyan-200 uppercase tracking-widest text-sm font-semibold">Specialist In:</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 order-3">
+                
+                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Hypertension</h3>
+                        <p class="text-xs text-pink-200">BP</p>
+                    </div>
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-stethoscope text-black text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Fever & Cold</h3>
+                        <p class="text-xs text-pink-200">Treatment</p>
+                    </div>
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-temperature-three-quarters text-orange-600 text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Asthma &</h3>
+                        <p class="text-xs text-pink-200">Allergy</p>
+                    </div>
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-lungs text-gray-700 text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Liver</h3>
+                        <p class="text-xs text-pink-200">Problems</p>
+                    </div>
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-flask text-purple-700 text-xl"></i>
+                    </div>
+                </div>
+
+                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                        <h3 class="font-bold uppercase text-sm">Kidney</h3>
+                        <p class="text-xs text-pink-200">Problems</p>
+                    </div>
+                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                        <i class="fa-solid fa-child-reaching text-red-800 text-xl"></i>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
 
     <!-- New health camp section with community images -->
-    <section class="py-20 bg-gradient-to-br from-primary via-accent to-primary text-white relative overflow-hidden">
+    <section class="py-10 bg-gradient-to-br from-primary via-accent to-primary text-white relative overflow-hidden">
         <div class="absolute inset-0 bg-black/20"></div>
         <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
         <div class="absolute bottom-10 right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
@@ -732,7 +878,7 @@
     </section>
 
     <!-- New testimonials section with patient images -->
-    <section class="py-20 bg-soft-pink">
+    <section class="py-10 bg-soft-pink">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
@@ -815,7 +961,7 @@
     </section>
 
     <!-- New contact section with clinic images -->
-    <section id="contact" class="py-20 bg-white">
+    <section id="contact" class="py-10 bg-white">
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
@@ -831,9 +977,9 @@
                 <!-- Contact Info -->
                 <div class="space-y-8">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <img src="/placeholder.svg?height=150&width=250" alt="Clinic Reception"
+                        <img src="https://imgs.search.brave.com/041zJ4NWU_H1pNEBXLprv3-288H2_9qARDT0VDOcjxo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzMyLzg3Lzgy/LzM2MF9GXzYzMjg3/ODI5OV9uVnBKRElD/a0lYZ2tCdXgxamoz/RmNlZWt4cktkb3lF/ZC5qcGc" alt="Clinic Reception"
                             class="w-full h-40 object-cover rounded-2xl shadow-lg">
-                        <img src="/placeholder.svg?height=150&width=250" alt="Consultation Room"
+                        <img src="https://i.pinimg.com/736x/92/12/58/92125818914728505277a8682e5bcb45.jpg" alt="Consultation Room"
                             class="w-full h-40 object-cover rounded-2xl shadow-lg">
                     </div>
 
