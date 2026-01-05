@@ -44,28 +44,30 @@
     }
 
     /* Custom Connector Lines for Desktop */
-        @media (min-width: 1024px) {
-            .connector-left::after {
-                content: '';
-                position: absolute;
-                right: -2rem; 
-                top: 50%;
-                width: 2rem;
-                height: 2px;
-                background-color: #94a3b8; /* Slate-400 */
-                z-index: -1;
-            }
-            .connector-right::before {
-                content: '';
-                position: absolute;
-                left: -2rem; 
-                top: 50%;
-                width: 2rem;
-                height: 2px;
-                background-color: #94a3b8;
-                z-index: -1;
-            }
+    @media (min-width: 1024px) {
+        .connector-left::after {
+            content: '';
+            position: absolute;
+            right: -2rem;
+            top: 50%;
+            width: 2rem;
+            height: 2px;
+            background-color: #94a3b8;
+            /* Slate-400 */
+            z-index: -1;
         }
+
+        .connector-right::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 50%;
+            width: 2rem;
+            height: 2px;
+            background-color: #94a3b8;
+            z-index: -1;
+        }
+    }
 </style>
 
 <body class="bg-soft-pink text-slate-text font-body overflow-x-hidden">
@@ -134,8 +136,9 @@
 
                 <h1
                     class="text-2xl md:text-6xl lg:text-7xl font-heading font-black text-slate-text mb-6 text-balance leading-tight">
-                    Senior Consultant  
-                    <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Internal Medicine Specialist</span>
+                    Senior Consultant
+                    <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Internal
+                        Medicine Specialist</span>
                 </h1>
 
                 <p
@@ -580,10 +583,12 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
-                    Medical <span
-                        class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Specializations</span>
+                    Medical
+                    <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">
+                        Specializations
+                    </span>
                 </h2>
-                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto text-pretty">
+                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto">
                     Comprehensive healthcare across multiple medical disciplines
                 </p>
             </div>
@@ -592,167 +597,184 @@
 
                 <!-- Adult Vaccination -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                    <div class="mb-6">
-                        <img src="https://kiaanhospital.com/wp-content/uploads/2023/09/adult-vaccines.jpg"
-                            alt="Adult Vaccination" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-red-400 to-red-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fas fa-syringe text-white text-2xl"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Adult Vaccination</h3>
-                    <p class="text-slate-text/70 text-center leading-relaxed">
-                        Comprehensive immunization strategies for adults to prevent infectious diseases and support
-                        long-term health.
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <img src="https://kiaanhospital.com/wp-content/uploads/2023/09/adult-vaccines.jpg"
+                        class="w-full h-40 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold text-center mb-3">Adult Vaccination</h3>
+                    <p class="text-center text-slate-text/70">
+                        Comprehensive immunization strategies for adults to prevent infectious diseases.
                     </p>
+
+                    <div class="mt-6 text-center">
+                        <a href="https://wa.me/919676138657?text=Hello%20Doctor,%20I%20would%20like%20to%20consult%20for%20Adult%20Vaccination."
+                            target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp"></i> PRESS TO CONSULT
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Allergies & Immunology -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                    <div class="mb-6">
-                        <img src="https://i.pinimg.com/1200x/75/bf/58/75bf5899a8530a3d4a07c8fcd53b2e22.jpg"
-                            alt="Allergies and Immunology" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fas fa-allergies text-white text-2xl"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Allergies & Immunology
-                    </h3>
-                    <p class="text-slate-text/70 text-center leading-relaxed">
-                        Diagnosis and management of allergies and immune disorders to improve overall quality of life.
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <img src="https://i.pinimg.com/1200x/75/bf/58/75bf5899a8530a3d4a07c8fcd53b2e22.jpg"
+                        class="w-full h-40 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold text-center mb-3">Allergies & Immunology</h3>
+                    <p class="text-center text-slate-text/70">
+                        Diagnosis and management of allergies and immune disorders.
                     </p>
+
+                    <div class="mt-6 text-center">
+                        <a href="https://wa.me/919676138657?text=Hello%20Doctor,%20I%20would%20like%20to%20consult%20for%20Allergies%20and%20Immunology."
+                            target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp"></i> PRESS TO CONSULT
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Diabetes Management -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                    <div class="mb-6">
-                        <img src="https://i.pinimg.com/736x/34/ac/56/34ac563237fcb55d32fe13ba011fad72.jpg"
-                            alt="Diabetes Management" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-purple-400 to-purple-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fas fa-tint text-white text-2xl"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Diabetes Management</h3>
-                    <p class="text-slate-text/70 text-center leading-relaxed">
-                        Advanced diabetes care with personalized plans for optimal glucose control and complication
-                        prevention.
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <img src="https://i.pinimg.com/736x/34/ac/56/34ac563237fcb55d32fe13ba011fad72.jpg"
+                        class="w-full h-40 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold text-center mb-3">Diabetes Management</h3>
+                    <p class="text-center text-slate-text/70">
+                        Personalized diabetes care for optimal glucose control.
                     </p>
+
+                    <div class="mt-6 text-center">
+                        <a href="https://wa.me/919676138657?text=Hello%20Doctor,%20I%20would%20like%20to%20consult%20for%20Diabetes%20Management."
+                            target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp"></i> PRESS TO CONSULT
+                        </a>
+                    </div>
                 </div>
 
-                <!-- Gastroenterological Diseases -->
+                <!-- Gastroenterology -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                    <div class="mb-6">
-                        <img src="https://i.pinimg.com/736x/c3/e1/02/c3e1021bd094f87512b05df4e74a1c30.jpg"
-                            alt="Gastroenterology" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fas fa-stomach text-white text-2xl"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Gastroenterological
-                        Diseases</h3>
-                    <p class="text-slate-text/70 text-center leading-relaxed">
-                        Expert care for acute and chronic digestive system disorders with accurate diagnosis and
-                        treatment.
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <img src="https://i.pinimg.com/736x/c3/e1/02/c3e1021bd094f87512b05df4e74a1c30.jpg"
+                        class="w-full h-40 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold text-center mb-3">Gastroenterological Diseases</h3>
+                    <p class="text-center text-slate-text/70">
+                        Expert care for digestive system disorders.
                     </p>
+
+                    <div class="mt-6 text-center">
+                        <a href="https://wa.me/919676138657?text=Hello%20Doctor,%20I%20would%20like%20to%20consult%20for%20Gastroenterology."
+                            target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp"></i> PRESS TO CONSULT
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Geriatric Medicine -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                    <div class="mb-6">
-                        <img src="https://i.pinimg.com/736x/02/b7/75/02b77557b9da48eb229522c9eae876e3.jpg"
-                            alt="Geriatric Medicine" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fas fa-user-friends text-white text-2xl"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Geriatric Medicine</h3>
-                    <p class="text-slate-text/70 text-center leading-relaxed">
-                        Comprehensive care for elderly patients focusing on disease prevention and healthy aging.
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <img src="https://i.pinimg.com/736x/02/b7/75/02b77557b9da48eb229522c9eae876e3.jpg"
+                        class="w-full h-40 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold text-center mb-3">Geriatric Medicine</h3>
+                    <p class="text-center text-slate-text/70">
+                        Specialized healthcare focused on elderly patients.
                     </p>
+
+                    <div class="mt-6 text-center">
+                        <a href="https://wa.me/919676138657?text=Hello%20Doctor,%20I%20would%20like%20to%20consult%20for%20Geriatric%20Medicine."
+                            target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp"></i> PRESS TO CONSULT
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Metabolic Disorders -->
                 <div
-                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 group">
-                    <div class="mb-6">
-                        <img src="https://i.pinimg.com/736x/cb/56/d9/cb56d971b43a4552f97f71aa422ca831.jpg"
-                            alt="Metabolic Disorders" class="w-full h-40 object-cover rounded-2xl mb-4">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-2xl flex items-center justify-center mx-auto -mt-8 shadow-lg group-hover:scale-110 transition-transform">
-                            <i class="fas fa-dna text-white text-2xl"></i>
-                        </div>
-                    </div>
-                    <h3 class="text-xl font-heading font-bold text-slate-text mb-4 text-center">Metabolic Disorders</h3>
-                    <p class="text-slate-text/70 text-center leading-relaxed">
-                        Expert management of metabolic diseases including obesity, lipid disorders, and related
-                        conditions.
+                    class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-2 group">
+                    <img src="https://i.pinimg.com/736x/cb/56/d9/cb56d971b43a4552f97f71aa422ca831.jpg"
+                        class="w-full h-40 object-cover rounded-2xl mb-6">
+                    <h3 class="text-xl font-bold text-center mb-3">Metabolic Disorders</h3>
+                    <p class="text-center text-slate-text/70">
+                        Management of obesity, lipid disorders and metabolism issues.
                     </p>
+
+                    <div class="mt-6 text-center">
+                        <a href="https://wa.me/919676138657?text=Hello%20Doctor,%20I%20would%20like%20to%20consult%20for%20Metabolic%20Disorders."
+                            target="_blank"
+                            class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-green-500 text-white font-semibold hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp"></i> PRESS TO CONSULT
+                        </a>
+                    </div>
                 </div>
 
             </div>
         </div>
-    </section> 
+    </section>
 
-<div class="max-w-7xl w-full mx-auto py-10">
-        
+
+    <div class="max-w-7xl w-full mx-auto py-10">
+
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative">
 
             <div class="flex flex-col gap-6 order-2 lg:order-1">
-                
+
                 <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-droplet text-purple-900 text-xl"></i>
                     </div>
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Diabetes</h3>
                         <p class="text-xs text-pink-200">(Sugar)</p>
                     </div>
                 </div>
 
                 <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-head-side-mask text-red-500 text-xl"></i>
                     </div>
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Thyroid</h3>
                         <p class="text-xs text-pink-200">Problems</p>
                     </div>
                 </div>
 
                 <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-person-pregnant text-orange-500 text-xl"></i>
                     </div>
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Sugar & BP</h3>
                         <p class="text-xs text-pink-200">In Pregnancy</p>
                     </div>
                 </div>
 
                 <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-heart-pulse text-red-600 text-xl"></i>
                     </div>
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Heart</h3>
                         <p class="text-xs text-pink-200">Problems</p>
                     </div>
                 </div>
 
                 <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-brain text-blue-500 text-xl"></i>
                     </div>
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Neuro</h3>
                         <p class="text-xs text-pink-200">Problems</p>
                     </div>
@@ -761,7 +783,8 @@
             </div>
 
             <div class="order-1 lg:order-2 flex justify-center z-20">
-                <div class="w-64 h-64 bg-[#2E1A5B] rounded-full border-4 border-cyan-200 shadow-xl flex flex-col items-center justify-center text-center p-4">
+                <div
+                    class="w-64 h-64 bg-[#2E1A5B] rounded-full border-4 border-cyan-200 shadow-xl flex flex-col items-center justify-center text-center p-4">
                     <h1 class="text-white text-xl font-bold leading-tight">GENERAL PHYSICIAN</h1>
                     <div class="w-16 h-0.5 bg-gray-400 my-2"></div>
                     <p class="text-cyan-200 uppercase tracking-widest text-sm font-semibold">Specialist In:</p>
@@ -769,53 +792,68 @@
             </div>
 
             <div class="flex flex-col gap-6 order-3">
-                
-                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+
+                <div
+                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Hypertension</h3>
                         <p class="text-xs text-pink-200">BP</p>
                     </div>
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-stethoscope text-black text-xl"></i>
                     </div>
                 </div>
 
-                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                <div
+                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Fever & Cold</h3>
                         <p class="text-xs text-pink-200">Treatment</p>
                     </div>
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-temperature-three-quarters text-orange-600 text-xl"></i>
                     </div>
                 </div>
 
-                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                <div
+                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Asthma &</h3>
                         <p class="text-xs text-pink-200">Allergy</p>
                     </div>
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-lungs text-gray-700 text-xl"></i>
                     </div>
                 </div>
 
-                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                <div
+                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Liver</h3>
                         <p class="text-xs text-pink-200">Problems</p>
                     </div>
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-flask text-purple-700 text-xl"></i>
                     </div>
                 </div>
 
-                <div class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
+                <div
+                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
+                    <div
+                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
                         <h3 class="font-bold uppercase text-sm">Kidney</h3>
                         <p class="text-xs text-pink-200">Problems</p>
                     </div>
-                    <div class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
+                    <div
+                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
                         <i class="fa-solid fa-child-reaching text-red-800 text-xl"></i>
                     </div>
                 </div>
@@ -836,43 +874,72 @@
                 <h2 class="text-3xl md:text-5xl font-heading font-black mb-4">
                     Community Health <span class="text-yellow-300">Programs</span>
                 </h2>
-                <p class="text-xl text-white/90 max-w-2xl mx-auto text-pretty">
+                <p class="text-xl text-white/90 max-w-2xl mx-auto">
                     Regular health camps for community wellness and preventive healthcare initiatives
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+                <!-- Health Camp Offers -->
                 <div
-                    class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
+                    class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all">
                     <img src="https://i.pinimg.com/1200x/79/a3/fb/79a3fb36ccec7962302f07800364f7c7.jpg"
                         alt="Health Camp" class="w-full h-32 object-cover rounded-2xl mb-6">
+
                     <div class="flex items-center mb-6">
                         <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
                             <i class="fas fa-calendar-check text-white text-2xl"></i>
                         </div>
                         <h3 class="text-2xl font-heading font-bold">Health Camp Offers</h3>
                     </div>
-                    <p class="text-white/90 leading-relaxed">
+
+                    <p class="text-white/90 leading-relaxed mb-6">
                         Regular health screening camps with comprehensive check-ups, consultations, and health awareness
-                        programs at affordable rates for the community.
+                        programs at
+                        affordable rates for the community.
                     </p>
+
+                    <a href="https://wa.me/919676138576?text=Hello,%20I%20want%20to%20know%20more%20about%20Health%20Camp%20Offers."
+                        target="_blank" class="inline-block px-8 py-3 rounded-full 
+          bg-gradient-to-r from-blue-600 to-indigo-600 
+          text-white font-semibold tracking-wide
+          hover:from-blue-700 hover:to-indigo-700 
+          transition-all duration-300 shadow-lg hover:shadow-xl">
+                        TO KNOW MORE
+                    </a>
+
                 </div>
 
+                <!-- Health Camp Enquiry -->
                 <div
-                    class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
-                    <img src="https://i.pinimg.com/736x/2c/1f/69/2c1f6994caf9295cbad1fdc41331e2c2.jpg" alt="Health Enquiry"
-                        class="w-full h-32 object-cover rounded-2xl mb-6">
+                    class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all">
+                    <img src="https://i.pinimg.com/736x/2c/1f/69/2c1f6994caf9295cbad1fdc41331e2c2.jpg"
+                        alt="Health Enquiry" class="w-full h-32 object-cover rounded-2xl mb-6">
+
                     <div class="flex items-center mb-6">
                         <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
                             <i class="fas fa-question-circle text-white text-2xl"></i>
                         </div>
                         <h3 class="text-2xl font-heading font-bold">Health Camp Enquiry</h3>
                     </div>
-                    <p class="text-white/90 leading-relaxed">
+
+                    <p class="text-white/90 leading-relaxed mb-6">
                         Get information about upcoming health camps, register for community health programs, and
-                        participate in wellness initiatives.
+                        participate in
+                        wellness initiatives.
                     </p>
+
+                    <a href="https://wa.me/919676138576?text=Hello,%20I%20want%20to%20know%20more%20about%20Health%20Camp%20Offers."
+                        target="_blank" class="inline-block px-8 py-3 rounded-full 
+          bg-gradient-to-r from-blue-600 to-indigo-600 
+          text-white font-semibold tracking-wide
+          hover:from-blue-700 hover:to-indigo-700 
+          transition-all duration-300 shadow-lg hover:shadow-xl">
+                        TO KNOW MORE
+                    </a>
                 </div>
+
             </div>
         </div>
     </section>
@@ -893,8 +960,8 @@
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-center mb-6">
-                        <img src="https://i.pinimg.com/1200x/ff/5d/de/ff5dde7a7732ff8a939ddbfe60b054a6.jpg" alt="Patient"
-                            class="w-16 h-16 rounded-full object-cover mr-4">
+                        <img src="https://i.pinimg.com/1200x/ff/5d/de/ff5dde7a7732ff8a939ddbfe60b054a6.jpg"
+                            alt="Patient" class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
                             <h4 class="font-heading font-bold text-slate-text">Priya Sharma</h4>
                             <p class="text-sm text-slate-text/70">Diabetes Patient</p>
@@ -937,8 +1004,8 @@
 
                 <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
                     <div class="flex items-center mb-6">
-                        <img src="https://i.pinimg.com/1200x/07/ac/56/07ac5609783fa1c26ee0f7872604a030.jpg" alt="Patient"
-                            class="w-16 h-16 rounded-full object-cover mr-4">
+                        <img src="https://i.pinimg.com/1200x/07/ac/56/07ac5609783fa1c26ee0f7872604a030.jpg"
+                            alt="Patient" class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
                             <h4 class="font-heading font-bold text-slate-text">Lakshmi Devi</h4>
                             <p class="text-sm text-slate-text/70">Geriatric Care</p>
@@ -960,6 +1027,81 @@
         </div>
     </section>
 
+    <section class="py-16 bg-gradient-to-br from-white via-soft-pink to-white">
+        <div class="container mx-auto px-4">
+
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
+                    Gallery & <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">
+                        Health Blogs
+                    </span>
+                </h2>
+                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto">
+                    Clinical moments and health awareness articles for patient education
+                </p>
+            </div>
+
+            <!-- Image Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-16">
+                <img src="images/gallery1.jpg"
+                    class="w-full h-48 object-cover rounded-2xl shadow-md hover:scale-105 transition" />
+                <img src="images/gallery2.jpg"
+                    class="w-full h-48 object-cover rounded-2xl shadow-md hover:scale-105 transition" />
+                <img src="images/gallery3.jpg"
+                    class="w-full h-48 object-cover rounded-2xl shadow-md hover:scale-105 transition" />
+                <img src="images/gallery4.jpg"
+                    class="w-full h-48 object-cover rounded-2xl shadow-md hover:scale-105 transition" />
+            </div>
+
+            <!-- Health Blogs -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- Blog Card -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                    <img src="images/blog1.jpg" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-slate-text mb-2">
+                            Understanding Diabetes Management
+                        </h3>
+                        <p class="text-slate-text/70 text-sm leading-relaxed">
+                            Learn how lifestyle changes, diet, and medication help control diabetes effectively.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Blog Card -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                    <img src="images/blog2.jpg" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-slate-text mb-2">
+                            Common Skin Allergies Explained
+                        </h3>
+                        <p class="text-slate-text/70 text-sm leading-relaxed">
+                            Causes, symptoms, and treatment options for common allergic skin conditions.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Blog Card -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition">
+                    <img src="images/blog3.jpg" class="w-full h-40 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-heading font-bold text-slate-text mb-2">
+                            Importance of Adult Vaccination
+                        </h3>
+                        <p class="text-slate-text/70 text-sm leading-relaxed">
+                            Why vaccinations are important for adults to prevent serious infections.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- New contact section with clinic images -->
     <section id="contact" class="py-10 bg-white">
         <div class="container mx-auto px-4">
@@ -977,50 +1119,70 @@
                 <!-- Contact Info -->
                 <div class="space-y-8">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <img src="https://imgs.search.brave.com/041zJ4NWU_H1pNEBXLprv3-288H2_9qARDT0VDOcjxo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA2LzMyLzg3Lzgy/LzM2MF9GXzYzMjg3/ODI5OV9uVnBKRElD/a0lYZ2tCdXgxamoz/RmNlZWt4cktkb3lF/ZC5qcGc" alt="Clinic Reception"
-                            class="w-full h-40 object-cover rounded-2xl shadow-lg">
-                        <img src="https://i.pinimg.com/736x/92/12/58/92125818914728505277a8682e5bcb45.jpg" alt="Consultation Room"
-                            class="w-full h-40 object-cover rounded-2xl shadow-lg">
+                        <img src="https://imgs.search.brave.com/dq0cB3jgdmdv1He8CYf9XjKrx7JSGyAdgDg--7RELdM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRz/dXJnZWluZGlhLmNv/bS93cC1jb250ZW50/L3VwbG9hZHMvMjAy/MC8wMy9Db250aW5l/bnRhbC1Ib3NwaXRh/bHMtSHlkZXJhYmFk/LmpwZw"
+                            alt="Clinic Reception" class="w-full h-52 object-cover rounded-2xl shadow-lg">
+                        <img src="https://imgs.search.brave.com/N3q-_hLaX13eZ1FMKtqoBovZGDewZvG9tHYjSnWx4iY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aGVhbHRodHJpcC5j/b20vX25leHQvaW1h/Z2U_dXJsPWh0dHBz/Oi8vczMtYXAtc291/dGgtMS5hbWF6b25h/d3MuY29tL2ltYWdl/cy5ob3NwYWxzLmNv/bS9ob3NwaXRhbHMv/aW1hZ2VzL2hvc3Bp/dGFsLWltYWdlLTE3/MzYxNDcwOTg1Njcu/anBnJnc9NjQwJnE9/NjA"
+                            alt="Consultation Room" class="w-full h-52 object-cover rounded-2xl shadow-lg">
                     </div>
 
                     <div class="space-y-6">
+
+                        <!-- Emergency -->
                         <div
                             class="flex items-center p-6 bg-gradient-to-r from-soft-pink to-white rounded-2xl shadow-lg">
                             <div
-                                class="w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center mr-6">
-                                <i class="fas fa-phone text-white text-xl"></i>
+                                class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-hospital p-5 text-white text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">24/7 Emergency</h4>
-                                <p class="text-slate-text/70">Available for urgent consultations and medical emergencies
+                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">
+                                    Emergency Services
+                                </h4>
+                                <p class="text-slate-text/70">
+                                    In case of emergency, please visit <strong>Continental Hospitals – Emergency
+                                        Department</strong>.
                                 </p>
                             </div>
                         </div>
 
+                        <!-- No Email Consultation -->
                         <div
                             class="flex items-center p-6 bg-gradient-to-r from-soft-pink to-white rounded-2xl shadow-lg">
                             <div
-                                class="w-16 h-16 bg-gradient-to-br from-accent to-pink-500 rounded-2xl flex items-center justify-center mr-6">
-                                <i class="fas fa-envelope text-white text-xl"></i>
+                                class="w-16 h-16 bg-gradient-to-br from-gray-500 to-gray-700 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-times-circle p-5 text-white text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">Email Consultation</h4>
-                                <p class="text-slate-text/70">Quick response guaranteed within 2 hours</p>
+                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">
+                                    Email Consultation
+                                </h4>
+                                <p class="text-slate-text/70">
+                                    Email consultations are <strong>not available</strong>. Please visit in person for
+                                    consultation.
+                                </p>
                             </div>
                         </div>
 
+                        <!-- Location -->
                         <div
                             class="flex items-center p-6 bg-gradient-to-r from-soft-pink to-white rounded-2xl shadow-lg">
                             <div
-                                class="w-16 h-16 bg-gradient-to-br from-green-400 to-green-600 rounded-2xl flex items-center justify-center mr-6">
-                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                                class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center mr-6">
+                                <i class="fas fa-map-marker-alt p-5 text-white text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">Service Areas</h4>
-                                <p class="text-slate-text/70">Hyderabad, Delhi, Bangalore - Home visits available</p>
+                                <h4 class="font-heading font-bold text-slate-text text-lg mb-1">
+                                    Consultation Location
+                                </h4>
+                                <p class="text-slate-text/70">
+                                    Available at <strong>Continental Hospital, Financial District, Gachibowli,
+                                        Hyderabad</strong>.
+                                </p>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
 
                 <!-- Contact Form -->
@@ -1397,29 +1559,29 @@
         });
 
         document.getElementById("contact-form").addEventListener("submit", function (e) {
-    e.preventDefault();
+            e.preventDefault();
 
-    const name = this.querySelector('input[type="text"]').value;
-    const email = this.querySelector('input[type="email"]').value;
-    const phone = this.querySelector('input[type="tel"]').value;
-    const service = this.querySelector('select').value;
-    const message = this.querySelector('textarea').value;
+            const name = this.querySelector('input[type="text"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const phone = this.querySelector('input[type="tel"]').value;
+            const service = this.querySelector('select').value;
+            const message = this.querySelector('textarea').value;
 
-    const whatsappMessage =
-        `Quick Consultation Request%0A%0A` +
-        `Name: ${name}%0A` +
-        `Email: ${email}%0A` +
-        `Phone: ${phone}%0A` +
-        `Service: ${service}%0A` +
-        `Concern: ${message}`;
+            const whatsappMessage =
+                `Quick Consultation Request%0A%0A` +
+                `Name: ${name}%0A` +
+                `Email: ${email}%0A` +
+                `Phone: ${phone}%0A` +
+                `Service: ${service}%0A` +
+                `Concern: ${message}`;
 
-    const whatsappNumber = "919676138576"; // India number format
+            const whatsappNumber = "919676138576"; // India number format
 
-    window.open(
-        `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`,
-        "_blank"
-    );
-});
+            window.open(
+                `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`,
+                "_blank"
+            );
+        });
     </script>
 </body>
 
