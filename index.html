@@ -113,71 +113,113 @@
         </div>
     </header>
 
-    <!-- New mobile-optimized hero section with multiple images -->
-    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-soft-pink"></div>
-        <div class="absolute top-10 left-10 w-20 h-20 bg-accent/20 rounded-full blur-xl animate-pulse"></div>
-        <div class="absolute bottom-20 right-10 w-32 h-32 bg-primary/20 rounded-full blur-2xl animate-pulse delay-1000">
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-slate-50">
+        <div class="absolute top-0 left-0 w-full h-full opacity-40 pointer-events-none">
+            <div class="absolute top-10 left-10 w-32 h-32 bg-blue-100 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-48 h-48 bg-indigo-50 rounded-full blur-3xl"></div>
         </div>
 
-        <div class="container mx-auto px-4 pt-20 py-5 relative z-10">
+        <div class="container mx-auto px-4 pt-24 py-12 relative z-10">
             <div class="text-center max-w-4xl mx-auto">
-                <!-- Doctor Image -->
-                <div class="mb-8 flex justify-center">
+
+                <div class="mb-10 flex justify-center">
                     <div class="relative">
-                        <img src="images/doctor.jpg" alt="Dr. Jagadeesh Kumar"
-                            class="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover shadow-2xl border-4 border-white float-animation">
+                        <div class="w-44 h-44 md:w-52 md:h-52 rounded-full p-1 border-2 border-blue-500/20">
+                            <img src="images/doctor.jpg" alt="Dr. Jagadeesh Kumar"
+                                class="w-full h-full rounded-full object-cover shadow-xl border-4 border-white">
+                        </div>
                         <div
-                            class="absolute -bottom-4 -right-4 w-16 h-16 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center shadow-lg pulse-glow">
-                            <i class="fas fa-stethoscope text-white text-xl"></i>
+                            class="absolute -bottom-2 -right-2 w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center shadow-lg border-4 border-white">
+                            <i class="fas fa-stethoscope text-white text-lg"></i>
                         </div>
                     </div>
                 </div>
 
-                <h1
-                    class="text-2xl md:text-6xl lg:text-7xl font-heading font-black text-slate-text mb-6 text-balance leading-tight">
-                    Senior Consultant
-                    <span class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Internal
-                        Medicine Specialist</span>
+                <h1 class="text-3xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
+                    Senior Consultant <br>
+                    <span class="text-blue-600">Internal Medicine Specialist</span>
                 </h1>
 
-                <p
-                    class="text-lg md:text-xl lg:text-2xl text-slate-text/80 mb-8 text-pretty font-light leading-relaxed max-w-3xl mx-auto">
-                    Experience personalized medical care with over 10+ years of expertise in diabetes, hypertension, and
-                    preventive medicine
+                <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-normal leading-relaxed">
+                    Personalized medical care with over <span class="font-bold text-slate-800">10+ years</span> of
+                    expertise in diabetes, hypertension, and preventive medicine.
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
                     <button
-                        class="bg-gradient-to-r from-primary to-accent text-white px-8 py-4 rounded-2xl font-heading font-bold text-lg shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 w-full sm:w-auto">
+                        class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-blue-700 hover:shadow-blue-200 transition-all duration-300 w-full sm:w-auto flex items-center justify-center">
                         <i class="fas fa-calendar-plus mr-2"></i>
                         Book Consultation
                     </button>
                     <button
-                        class="border-2 border-primary text-primary px-8 py-4 rounded-2xl font-heading font-bold text-lg hover:bg-primary hover:text-white transition-all duration-300 w-full sm:w-auto">
+                        class="bg-white border-2 border-slate-200 text-slate-700 px-10 py-4 rounded-xl font-bold text-lg hover:bg-slate-50 hover:border-blue-600 hover:text-blue-600 transition-all duration-300 w-full sm:w-auto flex items-center justify-center">
                         <i class="fas fa-phone mr-2"></i>
                         Emergency Call
                     </button>
                 </div>
 
-                <!-- Stats -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-slate-200 pt-10">
                     <div class="text-center">
-                        <div class="text-2xl md:text-3xl font-heading font-black text-primary mb-1">10+</div>
-                        <div class="text-sm text-slate-text/70 font-medium">Years Experience</div>
+                        <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-1">10+</div>
+                        <div class="text-xs md:text-sm text-slate-500 font-bold uppercase tracking-wider">Years
+                            Experience</div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl md:text-3xl font-heading font-black text-accent mb-1">24/7</div>
-                        <div class="text-sm text-slate-text/70 font-medium">Available</div>
+                    <div class="text-center border-l border-slate-100">
+                        <div class="text-3xl md:text-4xl font-bold text-indigo-600 mb-1">24/7</div>
+                        <div class="text-xs md:text-sm text-slate-500 font-bold uppercase tracking-wider">Available
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl md:text-3xl font-heading font-black text-primary mb-1">1000+</div>
-                        <div class="text-sm text-slate-text/70 font-medium">Patients Treated</div>
+                    <div class="text-center border-l border-slate-100">
+                        <div class="text-3xl md:text-4xl font-bold text-blue-600 mb-1">1000+</div>
+                        <div class="text-xs md:text-sm text-slate-500 font-bold uppercase tracking-wider">Patients
+                            Treated</div>
                     </div>
-                    <div class="text-center">
-                        <div class="text-2xl md:text-3xl font-heading font-black text-accent mb-1">98%</div>
-                        <div class="text-sm text-slate-text/70 font-medium">Success Rate</div>
+                    <div class="text-center border-l border-slate-100">
+                        <div class="text-3xl md:text-4xl font-bold text-indigo-600 mb-1">98%</div>
+                        <div class="text-xs md:text-sm text-slate-500 font-bold uppercase tracking-wider">Success Rate
+                        </div>
                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- A to z section -->
+    <section class="max-w-2xl mx-auto p-4 sm:p-8">
+        <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl border border-white p-6 sm:p-10">
+
+            <h2
+                class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700 mb-2 text-center sm:text-left">
+                Health Directory
+            </h2>
+            <p class="text-gray-500 mb-8 text-center sm:text-left text-sm sm:text-base">
+                Find diseases & conditions by first letter
+            </p>
+
+            <div id="alphabetContainer" class="grid grid-cols-5 sm:grid-cols-7 gap-3 mb-10 justify-items-center">
+            </div>
+
+            <div class="space-y-4">
+                <label class="block text-sm font-bold text-gray-700 uppercase tracking-widest ml-1">
+                    Quick Search
+                </label>
+                <div class="relative group">
+                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                        <svg class="w-5 h-5 text-blue-500 group-focus-within:text-indigo-600 transition-colors"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <input id="searchInput" type="text" placeholder="Type a disease (e.g. Asthma)"
+                        class="w-full border-2 border-blue-100 rounded-2xl py-4 pl-12 pr-6 text-lg focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all shadow-sm placeholder-gray-400" />
+                </div>
+            </div>
+
+            <div id="resultContainer" class="mt-8 space-y-4 max-h-screen relative overflow-y-auto transition-all duration-300">
+                <div class="text-center py-10 opacity-40">
+                    <p class="text-gray-500 italic">Select a letter to see results...</p>
                 </div>
             </div>
         </div>
@@ -713,316 +755,233 @@
         </div>
     </section>
 
-
-    <div class="max-w-7xl w-full mx-auto py-10">
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center relative">
-
-            <div class="flex flex-col gap-6 order-2 lg:order-1">
-
-                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-droplet text-purple-900 text-xl"></i>
-                    </div>
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Diabetes</h3>
-                        <p class="text-xs text-pink-200">(Sugar)</p>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-head-side-mask text-red-500 text-xl"></i>
-                    </div>
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Thyroid</h3>
-                        <p class="text-xs text-pink-200">Problems</p>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-person-pregnant text-orange-500 text-xl"></i>
-                    </div>
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Sugar & BP</h3>
-                        <p class="text-xs text-pink-200">In Pregnancy</p>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-heart-pulse text-red-600 text-xl"></i>
-                    </div>
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Heart</h3>
-                        <p class="text-xs text-pink-200">Problems</p>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-start lg:justify-end gap-3 relative connector-left">
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-brain text-blue-500 text-xl"></i>
-                    </div>
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-l-lg rounded-r-md shadow-md w-full lg:w-auto text-center lg:text-right min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Neuro</h3>
-                        <p class="text-xs text-pink-200">Problems</p>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="order-1 lg:order-2 flex justify-center z-20">
-                <div
-                    class="w-64 h-64 bg-[#2E1A5B] rounded-full border-4 border-cyan-200 shadow-xl flex flex-col items-center justify-center text-center p-4">
-                    <h1 class="text-white text-xl font-bold leading-tight">GENERAL PHYSICIAN</h1>
-                    <div class="w-16 h-0.5 bg-gray-400 my-2"></div>
-                    <p class="text-cyan-200 uppercase tracking-widest text-sm font-semibold">Specialist In:</p>
-                </div>
-            </div>
-
-            <div class="flex flex-col gap-6 order-3">
-
-                <div
-                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Hypertension</h3>
-                        <p class="text-xs text-pink-200">BP</p>
-                    </div>
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-stethoscope text-black text-xl"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Fever & Cold</h3>
-                        <p class="text-xs text-pink-200">Treatment</p>
-                    </div>
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-temperature-three-quarters text-orange-600 text-xl"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Asthma &</h3>
-                        <p class="text-xs text-pink-200">Allergy</p>
-                    </div>
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-lungs text-gray-700 text-xl"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Liver</h3>
-                        <p class="text-xs text-pink-200">Problems</p>
-                    </div>
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-flask text-purple-700 text-xl"></i>
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-row-reverse lg:flex-row items-center justify-start gap-3 relative connector-right">
-                    <div
-                        class="bg-[#C2103F] text-white py-3 px-6 rounded-r-lg rounded-l-md shadow-md w-full lg:w-auto text-center lg:text-left min-w-[200px]">
-                        <h3 class="font-bold uppercase text-sm">Kidney</h3>
-                        <p class="text-xs text-pink-200">Problems</p>
-                    </div>
-                    <div
-                        class="w-14 h-14 bg-slate-100 rounded-full border-2 border-slate-300 flex items-center justify-center shrink-0 shadow-sm z-10">
-                        <i class="fa-solid fa-child-reaching text-red-800 text-xl"></i>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-
     <!-- New health camp section with community images -->
-    <section class="py-10 bg-gradient-to-br from-primary via-accent to-primary text-white relative overflow-hidden">
-        <div class="absolute inset-0 bg-black/20"></div>
-        <div class="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-2xl"></div>
-        <div class="absolute bottom-10 right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
 
-        <div class="container mx-auto px-4 relative z-10">
+    <section class="py-16 bg-slate-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-heading font-black mb-4">
-                    Community Health <span class="text-yellow-300">Programs</span>
+                <h2 class="text-3xl md:text-4xl font-black text-slate-800 uppercase tracking-tight">
+                    Our <span class="text-blue-600">Specializations</span>
                 </h2>
-                <p class="text-xl text-white/90 max-w-2xl mx-auto">
-                    Regular health camps for community wellness and preventive healthcare initiatives
-                </p>
+                <div class="w-20 h-1.5 bg-blue-600 mx-auto mt-4 rounded-full"></div>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
 
-                <!-- Health Camp Offers -->
-                <div
-                    class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all">
-                    <img src="https://i.pinimg.com/1200x/79/a3/fb/79a3fb36ccec7962302f07800364f7c7.jpg"
-                        alt="Health Camp" class="w-full h-32 object-cover rounded-2xl mb-6">
-
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
-                            <i class="fas fa-calendar-check text-white text-2xl"></i>
+                <div class="space-y-6 order-2 lg:order-1">
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/10 transition-all duration-300 lg:flex-row-reverse">
+                        <div
+                            class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-blue-600 transition-colors">
+                            <i class="fa-solid fa-droplet text-blue-600 text-xl group-hover:text-white"></i>
                         </div>
-                        <h3 class="text-2xl font-heading font-bold">Health Camp Offers</h3>
+                        <div class="lg:text-right flex-grow">
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Diabetes</h3>
+                            <p class="text-sm text-slate-500 font-medium">(Sugar Management)</p>
+                        </div>
                     </div>
 
-                    <p class="text-white/90 leading-relaxed mb-6">
-                        Regular health screening camps with comprehensive check-ups, consultations, and health awareness
-                        programs at
-                        affordable rates for the community.
-                    </p>
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300 lg:flex-row-reverse">
+                        <div
+                            class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-red-500">
+                            <i class="fa-solid fa-head-side-mask text-red-500 text-xl group-hover:text-white"></i>
+                        </div>
+                        <div class="lg:text-right flex-grow">
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Thyroid</h3>
+                            <p class="text-sm text-slate-500 font-medium">Hormonal Problems</p>
+                        </div>
+                    </div>
 
-                    <a href="https://wa.me/919676138576?text=Hello,%20I%20want%20to%20know%20more%20about%20Health%20Camp%20Offers."
-                        target="_blank" class="inline-block px-8 py-3 rounded-full 
-          bg-gradient-to-r from-blue-600 to-indigo-600 
-          text-white font-semibold tracking-wide
-          hover:from-blue-700 hover:to-indigo-700 
-          transition-all duration-300 shadow-lg hover:shadow-xl">
-                        TO KNOW MORE
-                    </a>
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300 lg:flex-row-reverse">
+                        <div
+                            class="w-14 h-14 bg-orange-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-orange-500">
+                            <i class="fa-solid fa-person-pregnant text-orange-500 text-xl group-hover:text-white"></i>
+                        </div>
+                        <div class="lg:text-right flex-grow">
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Sugar & BP</h3>
+                            <p class="text-sm text-slate-500 font-medium">In Pregnancy</p>
+                        </div>
+                    </div>
 
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300 lg:flex-row-reverse">
+                        <div
+                            class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-purple-600">
+                            <i class="fa-solid fa-brain text-purple-600 text-xl group-hover:text-white"></i>
+                        </div>
+                        <div class="lg:text-right flex-grow">
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Neuro</h3>
+                            <p class="text-sm text-slate-500 font-medium">Brain Related Issues</p>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- Health Camp Enquiry -->
-                <div
-                    class="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 hover:bg-white/20 transition-all">
-                    <img src="https://i.pinimg.com/736x/2c/1f/69/2c1f6994caf9295cbad1fdc41331e2c2.jpg"
-                        alt="Health Enquiry" class="w-full h-32 object-cover rounded-2xl mb-6">
-
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mr-4">
-                            <i class="fas fa-question-circle text-white text-2xl"></i>
+                <div class="order-1 lg:order-2 flex justify-center py-8">
+                    <div class="relative">
+                        <div
+                            class="absolute inset-0 border-2 border-dashed border-blue-400 rounded-full animate-[spin_10s_linear_infinite] opacity-30">
                         </div>
-                        <h3 class="text-2xl font-heading font-bold">Health Camp Enquiry</h3>
+
+                        <div
+                            class="w-64 h-64 bg-[#2E1A5B] rounded-full border-8 border-white shadow-2xl flex flex-col items-center justify-center text-center p-6 transform hover:scale-105 transition-transform duration-500">
+                            <div class="text-cyan-400 mb-2">
+                                <i class="fa-solid fa-user-doctor text-4xl"></i>
+                            </div>
+                            <h1 class="text-white text-xl font-black leading-tight tracking-tighter">GENERAL PHYSICIAN
+                            </h1>
+                            <div class="w-12 h-1 bg-cyan-400 my-3 rounded-full"></div>
+                            <p class="text-cyan-200 uppercase tracking-widest text-[10px] font-bold">Comprehensive
+                                Medical Care</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-6 order-3">
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-indigo-600">
+                            <i class="fa-solid fa-stethoscope text-indigo-600 text-xl group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Hypertension</h3>
+                            <p class="text-sm text-slate-500 font-medium">BP Management</p>
+                        </div>
                     </div>
 
-                    <p class="text-white/90 leading-relaxed mb-6">
-                        Get information about upcoming health camps, register for community health programs, and
-                        participate in
-                        wellness initiatives.
-                    </p>
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-yellow-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-yellow-500">
+                            <i
+                                class="fa-solid fa-temperature-three-quarters text-yellow-600 text-xl group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Fever & Cold</h3>
+                            <p class="text-sm text-slate-500 font-medium">Viral & Infections</p>
+                        </div>
+                    </div>
 
-                    <a href="https://wa.me/919676138576?text=Hello,%20I%20want%20to%20know%20more%20about%20Health%20Camp%20Offers."
-                        target="_blank" class="inline-block px-8 py-3 rounded-full 
-          bg-gradient-to-r from-blue-600 to-indigo-600 
-          text-white font-semibold tracking-wide
-          hover:from-blue-700 hover:to-indigo-700 
-          transition-all duration-300 shadow-lg hover:shadow-xl">
-                        TO KNOW MORE
-                    </a>
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-teal-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-teal-500">
+                            <i class="fa-solid fa-lungs text-teal-600 text-xl group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Asthma</h3>
+                            <p class="text-sm text-slate-500 font-medium">Lungs & Allergy</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="group flex items-center gap-4 bg-white p-4 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-300">
+                        <div
+                            class="w-14 h-14 bg-emerald-50 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-emerald-500">
+                            <i class="fa-solid fa-vial text-emerald-600 text-xl group-hover:text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-800 text-lg uppercase tracking-wide">Kidney</h3>
+                            <p class="text-sm text-slate-500 font-medium">Renal Health</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
     </section>
 
+
     <!-- New testimonials section with patient images -->
-    <section class="py-10 bg-soft-pink">
-        <div class="container mx-auto px-4">
+    <section class="py-20 bg-slate-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-64 h-64 bg-blue-100/50 rounded-full blur-3xl -mr-20 -mt-20"></div>
+        <div class="absolute bottom-0 left-0 w-64 h-64 bg-indigo-100/50 rounded-full blur-3xl -ml-20 -mb-20"></div>
+
+        <div class="container mx-auto px-4 relative z-10">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-5xl font-heading font-black text-slate-text mb-4">
-                    Patient <span
-                        class="text-transparent bg-gradient-to-r from-primary to-accent bg-clip-text">Testimonials</span>
+                <span
+                    class="inline-block px-4 py-1.5 bg-blue-100 text-blue-700 text-sm font-bold rounded-full mb-4 tracking-wider uppercase">
+                    Community Wellness
+                </span>
+                <h2 class="text-3xl md:text-5xl font-black text-slate-900 mb-6">
+                    Health <span class="text-blue-600">Programs</span>
                 </h2>
-                <p class="text-lg text-slate-text/70 max-w-2xl mx-auto text-pretty">
-                    Real stories from patients who experienced exceptional care
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+                    Regular health camps designed for community wellness and proactive preventive healthcare
+                    initiatives.
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-                    <div class="flex items-center mb-6">
-                        <img src="https://i.pinimg.com/1200x/ff/5d/de/ff5dde7a7732ff8a939ddbfe60b054a6.jpg"
-                            alt="Patient" class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-heading font-bold text-slate-text">Priya Sharma</h4>
-                            <p class="text-sm text-slate-text/70">Diabetes Patient</p>
+            <div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+
+                <div
+                    class="group bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://i.pinimg.com/1200x/79/a3/fb/79a3fb36ccec7962302f07800364f7c7.jpg"
+                            alt="Health Camp"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-6">
+                            <span
+                                class="bg-yellow-400 text-black text-xs font-black px-3 py-1 rounded-full uppercase">Active
+                                Offer</span>
                         </div>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
+
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center mr-4 group-hover:bg-blue-600 transition-colors duration-300">
+                                <i class="fas fa-calendar-check text-blue-600 group-hover:text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-800">Health Camp Offers</h3>
+                        </div>
+                        <p class="text-slate-600 leading-relaxed mb-8">
+                            Comprehensive check-ups and specialist consultations at affordable rates. Join our monthly
+                            screening programs.
+                        </p>
+                        <a href="https://wa.me/919676138576?text=Hello, I want to know more about Health Camp Offers."
+                            target="_blank"
+                            class="w-full inline-flex items-center justify-center px-8 py-4 rounded-xl bg-slate-900 text-white font-bold hover:bg-blue-600 transition-all duration-300 shadow-lg group/btn">
+                            <span>LEARN MORE</span>
+                            <i class="fab fa-whatsapp ml-2 text-xl text-green-400"></i>
+                        </a>
                     </div>
-                    <p class="text-slate-text/80 leading-relaxed">
-                        "Dr. Jagadeesh's comprehensive approach to diabetes management has transformed my life. His
-                        personalized care and regular monitoring helped me achieve better blood sugar control."
-                    </p>
                 </div>
 
-                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-                    <div class="flex items-center mb-6">
-                        <img src="https://i.pinimg.com/736x/6b/b6/d0/6bb6d094147301f3ccce198b6d6179bc.jpg" alt="Patient"
-                            class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-heading font-bold text-slate-text">Rajesh Kumar</h4>
-                            <p class="text-sm text-slate-text/70">Hypertension Patient</p>
+                <div
+                    class="group bg-white rounded-[2rem] overflow-hidden shadow-sm border border-slate-100 hover:shadow-2xl hover:shadow-indigo-500/10 transition-all duration-500 transform hover:-translate-y-2">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://i.pinimg.com/736x/2c/1f/69/2c1f6994caf9295cbad1fdc41331e2c2.jpg"
+                            alt="Health Enquiry"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                    </div>
+
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <div
+                                class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center mr-4 group-hover:bg-indigo-600 transition-colors duration-300">
+                                <i class="fas fa-question-circle text-indigo-600 group-hover:text-white text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-800">Camp Enquiry</h3>
                         </div>
+                        <p class="text-slate-600 leading-relaxed mb-8">
+                            Want to organize a camp or need details about upcoming events? Get in touch with our
+                            community team.
+                        </p>
+                        <a href="https://wa.me/919676138576?text=Hello, I have an enquiry about upcoming Health Camps."
+                            target="_blank"
+                            class="w-full inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-slate-200 text-slate-800 font-bold hover:border-blue-600 hover:text-blue-600 transition-all duration-300 group/btn">
+                            <span>SEND ENQUIRY</span>
+                            <i class="fas fa-paper-plane ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </a>
                     </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-slate-text/80 leading-relaxed">
-                        "Excellent doctor with great expertise in hypertension management. The virtual consultations are
-                        convenient and the treatment plan is very effective."
-                    </p>
                 </div>
 
-                <div class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300">
-                    <div class="flex items-center mb-6">
-                        <img src="https://i.pinimg.com/1200x/07/ac/56/07ac5609783fa1c26ee0f7872604a030.jpg"
-                            alt="Patient" class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-heading font-bold text-slate-text">Lakshmi Devi</h4>
-                            <p class="text-sm text-slate-text/70">Geriatric Care</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="text-slate-text/80 leading-relaxed">
-                        "Dr. Jagadeesh provides compassionate care for elderly patients. His understanding of geriatric
-                        medicine and patient approach is exceptional."
-                    </p>
-                </div>
             </div>
         </div>
     </section>
@@ -1582,6 +1541,1338 @@
                 "_blank"
             );
         });
+
+        function atoz() {
+            document.addEventListener("DOMContentLoaded", () => {
+                const diseaseData = {
+                    A: [
+                        "Atrial fibrillation",
+                        "Asthma",
+                        "Anemia",
+                        "Arthritis",
+                        "Acne",
+                        "Anxiety disorder",
+                        "Allergies",
+                        "Alzheimer's disease",
+                        "Appendicitis",
+                        "Acid reflux (GERD)",
+                        "Astigmatism",
+                        "Atherosclerosis",
+                        "Anaphylaxis",
+                        "Autism spectrum disorder",
+                        "Alcohol use disorder",
+                        "Alopecia",
+                        "ADHD",
+                        "Anorexia nervosa"
+                    ],
+
+                    B: [
+                        "Back pain",
+                        "Bronchitis",
+                        "Breast cancer",
+                        "Brain tumor",
+                        "Bacterial vaginosis",
+                        "Bad breath",
+                        "Baldness",
+                        "Bell's palsy",
+                        "Benign prostatic hyperplasia (BPH)",
+                        "Bipolar disorder",
+                        "Bladder infection",
+                        "Bladder stones",
+                        "Bone cancer",
+                        "Brain aneurysm",
+                        "Broken bone",
+                        "Burns",
+                        "Bursitis",
+                        "Bulimia nervosa"
+                    ],
+                    C: [
+                        "Common cold",
+                        "COVID-19",
+                        "Cancer",
+                        "Cough",
+                        "Chest pain",
+                        "Constipation",
+                        "Conjunctivitis (Pink eye)",
+                        "Chickenpox",
+                        "Cervical cancer",
+                        "Colon cancer",
+                        "Carpal tunnel syndrome",
+                        "Cataracts",
+                        "Celiac disease",
+                        "Chronic kidney disease",
+                        "Chronic obstructive pulmonary disease (COPD)",
+                        "Coronary artery disease",
+                        "Crohn's disease",
+                        "Cirrhosis",
+                        "Cold sore",
+                        "Concussion",
+                        "Contact dermatitis",
+                        "Costochondritis",
+                        "Cystitis (Urinary tract infection)",
+                        "Cystic fibrosis",
+                        "Cluster headache"
+                    ],
+                    D: [
+                        "Diabetes",
+                        "Dandruff",
+                        "Depression",
+                        "Dengue fever",
+                        "Diarrhea",
+                        "Dehydration",
+                        "Dementia",
+                        "Dermatitis",
+                        "Dry eyes",
+                        "Dry skin",
+                        "Dizziness",
+                        "Deep vein thrombosis (DVT)",
+                        "Diabetic neuropathy",
+                        "Diabetic retinopathy",
+                        "Diabetic ketoacidosis",
+                        "Diverticulitis",
+                        "Down syndrome",
+                        "Drug addiction",
+                        "Drug allergy",
+                        "Dust mite allergy",
+                        "Deviated septum",
+                        "Delayed sleep phase disorder",
+                        "Dry mouth",
+                        "Dysphagia",
+                        "Dysthymia"
+                    ],
+
+                    E: [
+                        "E. coli infection",
+                        "Ear infection",
+                        "Earwax blockage",
+                        "Eating disorders",
+                        "Ectopic pregnancy",
+                        "Eczema",
+                        "Edema",
+                        "Egg allergy",
+                        "Emphysema",
+                        "Encephalitis",
+                        "Endometriosis",
+                        "End-stage renal disease",
+                        "Enlarged heart",
+                        "Enlarged prostate",
+                        "Enlarged thyroid (Goiter)",
+                        "Epilepsy",
+                        "Epidermoid cyst",
+                        "Epididymitis",
+                        "Erectile dysfunction",
+                        "Esophageal cancer",
+                        "Esophagitis",
+                        "Essential tremor",
+                        "Exercise-induced asthma",
+                        "Eye floaters",
+                        "Eyestrain"
+                    ],
+                    F: [
+                        "Fever",
+                        "Flu (Influenza)",
+                        "Fatty liver disease",
+                        "Food poisoning",
+                        "Food allergy",
+                        "Farsightedness",
+                        "Fibromyalgia",
+                        "Fibroids (Uterine fibroids)",
+                        "Flatfeet",
+                        "Folliculitis",
+                        "Fungal nail infection",
+                        "Frozen shoulder",
+                        "Fecal incontinence",
+                        "Female infertility",
+                        "Febrile seizure",
+                        "Foot fracture",
+                        "Fracture",
+                        "Frontotemporal dementia",
+                        "Frostbite",
+                        "Functional dyspepsia",
+                        "Fuchs dystrophy",
+                        "Familial hypercholesterolemia",
+                        "Factor V Leiden",
+                        "Fibroadenoma",
+                        "Food-borne illness"
+                    ],
+                    G: [
+                        "Gallstones",
+                        "Gastritis",
+                        "Gastroesophageal reflux disease (GERD)",
+                        "Gastroenteritis",
+                        "Gas and gas pains",
+                        "Generalized anxiety disorder",
+                        "Genital herpes",
+                        "Genital warts",
+                        "Gestational diabetes",
+                        "Giardia infection",
+                        "Gingivitis",
+                        "Glaucoma",
+                        "Glioblastoma",
+                        "Goiter",
+                        "Gonorrhea",
+                        "Gout",
+                        "Graves' disease",
+                        "Guillain-Barre syndrome",
+                        "Gynecomastia",
+                        "Ganglion cyst",
+                        "Gangrene",
+                        "Gastrointestinal bleeding",
+                        "Germ cell tumors",
+                        "Golfer's elbow",
+                        "Growing pains"
+                    ],
+                    H: [
+                        "H. pylori infection",
+                        "H1N1 flu (swine flu)",
+                        "Hair loss",
+                        "Hairy cell leukemia",
+                        "Hairy tongue",
+                        "Hammertoe and mallet toe",
+                        "Hamstring injury",
+                        "Hand-foot-and-mouth disease",
+                        "Hangovers",
+                        "Hantavirus pulmonary syndrome",
+                        "Hashimoto's disease",
+                        "Hay fever",
+                        "Head and neck cancers",
+                        "Head lice",
+                        "Headaches in children",
+                        "Hearing loss",
+                        "Heart arrhythmia",
+                        "Heart attack",
+                        "Heart disease",
+                        "Heart failure",
+                        "Heart murmurs",
+                        "Heart palpitations",
+                        "Heart valve disease",
+                        "Heartburn",
+                        "Heat exhaustion",
+                        "Heat rash",
+                        "Heatstroke",
+                        "Heavy menstrual bleeding",
+                        "Helicobacter pylori infection",
+                        "Hemangioma",
+                        "Hemifacial spasm",
+                        "Hemochromatosis",
+                        "Hemolytic uremic syndrome (HUS)",
+                        "Hemophilia",
+                        "Hemorrhoids",
+                        "Henoch-Schonlein purpura",
+                        "Hepatic encephalopathy",
+                        "Hepatitis A",
+                        "Hepatitis B",
+                        "Hepatitis C",
+                        "Hepatocellular carcinoma (HCC)",
+                        "Hepatopulmonary syndrome",
+                        "Hereditary hemorrhagic telangiectasia",
+                        "Herniated disk",
+                        "Herpes zoster",
+                        "Hiatal hernia",
+                        "Hiccups",
+                        "Hidradenitis suppurativa",
+                        "High blood pressure (hypertension)",
+                        "High cholesterol",
+                        "Hilar cholangiocarcinoma",
+                        "Hip dysplasia",
+                        "Hip fracture",
+                        "Hip labral tear",
+                        "Hirschsprung's disease",
+                        "Hirsutism",
+                        "Histoplasmosis",
+                        "HIV/AIDS",
+                        "Hives and angioedema",
+                        "Hoarding disorder",
+                        "Hodgkin lymphoma",
+                        "Horner syndrome",
+                        "Hot flashes",
+                        "HPV infection",
+                        "Huntington's disease",
+                        "Hurthle cell cancer",
+                        "Hydrocele",
+                        "Hydrocephalus",
+                        "Hydronephrosis",
+                        "Hypercalcemia",
+                        "Hyperglycemia",
+                        "Hyperhidrosis",
+                        "Hyperparathyroidism",
+                        "Hyperthyroidism",
+                        "Hypertrophic cardiomyopathy",
+                        "Hypoglycemia",
+                        "Hyponatremia",
+                        "Hypoparathyroidism",
+                        "Hypopituitarism",
+                        "Hypospadias",
+                        "Hypotension",
+                        "Hypothermia",
+                        "Hypothyroidism"
+                    ],
+                    I: [
+                        "Idiopathic hypersomnia",
+                        "Idiopathic intracranial hypertension",
+                        "IgA nephropathy (Berger disease)",
+                        "Illness anxiety disorder",
+                        "Immune thrombocytopenia (ITP)",
+                        "Impacted wisdom teeth",
+                        "Impetigo",
+                        "Incompetent cervix",
+                        "Indigestion",
+                        "Infant jaundice",
+                        "Infant reflux",
+                        "Infectious diseases",
+                        "Infertility",
+                        "Inflammatory bowel disease (IBD)",
+                        "Inflammatory breast cancer",
+                        "Influenza (flu)",
+                        "Ingrown hair",
+                        "Ingrown toenails",
+                        "Inguinal hernia",
+                        "Inherited metabolic disorders",
+                        "Insomnia",
+                        "Intermittent explosive disorder",
+                        "Interstitial cystitis",
+                        "Interstitial lung disease",
+                        "Intestinal ischemia",
+                        "Intestinal obstruction",
+                        "Intracranial aneurysm",
+                        "Intracranial hematoma",
+                        "Intracranial venous malformations",
+                        "Intussusception",
+                        "Invasive lobular carcinoma",
+                        "Iritis",
+                        "Iron deficiency anemia",
+                        "Irritable bowel syndrome",
+                        "Ischemic colitis",
+                        "Itchy skin (pruritus)"
+                    ],
+                    J: [
+                        "Jellyfish stings",
+                        "Jet lag disorder",
+                        "Jock itch",
+                        "Jumper's knee (Patellar tendinitis)",
+                        "Juvenile idiopathic arthritis",
+                        "Juvenile schizophrenia"
+                    ],
+                    K: [
+                        "Kaposi sarcoma",
+                        "Kawasaki disease",
+                        "Keloid scar",
+                        "Keratitis",
+                        "Keratoconjunctivitis sicca (Dry eyes)",
+                        "Keratoconus",
+                        "Keratosis pilaris",
+                        "Actinic keratosis",
+                        "Seborrheic keratosis",
+                        "Diabetic ketoacidosis",
+                        "Kidney cancer",
+                        "Kidney cysts",
+                        "Chronic kidney disease",
+                        "Kidney infection",
+                        "Kidney stones",
+                        "Kleptomania",
+                        "Klinefelter syndrome",
+                        "Klippel-Trenaunay syndrome",
+                        "Knee bursitis",
+                        "Knee pain",
+                        "Kyphosis"
+                    ],
+                    L: [
+                        "Lactose intolerance",
+                        "Laryngitis",
+                        "Latex allergy",
+                        "Lazy eye (Amblyopia)",
+                        "Lead poisoning",
+                        "Left ventricular hypertrophy",
+                        "Legg-Calve-Perthes disease",
+                        "Legionnaires' disease",
+                        "Leiomyosarcoma",
+                        "Leukemia",
+                        "Leukoplakia",
+                        "Lewy body dementia",
+                        "Lice infestation",
+                        "Lichen planus",
+                        "Lichen sclerosus",
+                        "Lip cancer",
+                        "Lipoma",
+                        "Liposarcoma",
+                        "Listeria infection",
+                        "Liver cancer",
+                        "Liver disease",
+                        "Liver hemangioma",
+                        "Lobular carcinoma in situ (LCIS)",
+                        "Long QT syndrome",
+                        "Low blood pressure (Hypotension)",
+                        "Low sex drive in women",
+                        "Low sperm count",
+                        "Lung cancer",
+                        "Lupus",
+                        "Lupus nephritis",
+                        "Lyme disease",
+                        "Lymphedema",
+                        "Lymphoma",
+                        "Lynch syndrome"
+                    ],
+                    L: [
+                        "Lactose intolerance",
+                        "Laryngitis",
+                        "Latex allergy",
+                        "Lazy eye (Amblyopia)",
+                        "Lead poisoning",
+                        "Left ventricular hypertrophy",
+                        "Legg-Calve-Perthes disease",
+                        "Legionnaires' disease",
+                        "Leiomyosarcoma",
+                        "Leukemia",
+                        "Leukoplakia",
+                        "Lewy body dementia",
+                        "Lice infestation",
+                        "Lichen planus",
+                        "Lichen sclerosus",
+                        "Lip cancer",
+                        "Lipoma",
+                        "Liposarcoma",
+                        "Listeria infection",
+                        "Liver cancer",
+                        "Liver disease",
+                        "Liver hemangioma",
+                        "Lobular carcinoma in situ (LCIS)",
+                        "Long QT syndrome",
+                        "Low blood pressure (Hypotension)",
+                        "Low sex drive in women",
+                        "Low sperm count",
+                        "Lung cancer",
+                        "Lupus",
+                        "Lupus nephritis",
+                        "Lyme disease",
+                        "Lymphedema",
+                        "Lymphoma",
+                        "Lynch syndrome"
+                    ],
+                    M: [
+                        "Macular degeneration, dry",
+                        "Macular degeneration, wet",
+                        "Mad cow disease",
+                        "Major depressive disorder",
+                        "Malaria",
+                        "Male breast cancer",
+                        "Male hypogonadism",
+                        "Male infertility",
+                        "Malignant hyperthermia",
+                        "Malignant mesothelioma",
+                        "Malignant peripheral nerve sheath tumors",
+                        "Mammary duct ectasia",
+                        "Bipolar disorder",
+                        "Mantle cell lymphoma",
+                        "Marfan syndrome",
+                        "Marginal zone lymphoma",
+                        "Fatty liver disease (MASLD)",
+                        "Mastalgia",
+                        "Mastitis",
+                        "MCAD deficiency",
+                        "Metabolic syndrome",
+                        "Metastatic castration-resistant prostate cancer (mCRPC)",
+                        "Methicillin-resistant Staphylococcus aureus infection (MRSA)",
+                        "Migraine",
+                        "Milk allergy",
+                        "Milk intolerance",
+                        "Miscarriage",
+                        "Mitral valve disease",
+                        "Multiple myeloma",
+                        "Multiple sclerosis"
+                    ],
+                    N: [
+                        "NAFLD (Fatty liver disease)",
+                        "Nail fungus",
+                        "Narcissistic personality disorder",
+                        "Narcolepsy",
+                        "Nasal polyps",
+                        "Nasopharyngeal carcinoma",
+                        "Nearsightedness (Myopia)",
+                        "Neck pain",
+                        "Neonatal jaundice",
+                        "Nephrotic syndrome",
+                        "Neuroblastoma",
+                        "Neurodermatitis",
+                        "Neuroendocrine tumors",
+                        "Neurofibroma",
+                        "Neurofibromatosis type 1",
+                        "Neuroma, acoustic (Acoustic neuroma)",
+                        "Neuropathy, diabetic",
+                        "Neuropathy, peripheral",
+                        "Nevus (Moles)",
+                        "Newborn jaundice",
+                        "Nickel allergy",
+                        "Nicotine dependence",
+                        "Niemann-Pick disease",
+                        "Night terrors",
+                        "Nightmare disorder",
+                        "Nocturnal enuresis (Bed-wetting)",
+                        "Noise-related hearing loss",
+                        "Nonallergic rhinitis",
+                        "Non-Hodgkin lymphoma",
+                        "Norovirus infection"
+                    ],
+                    O: [
+                        "OAB (Overactive bladder)",
+                        "Obesity",
+                        "Childhood obesity",
+                        "Obsessive-compulsive disorder (OCD)",
+                        "Cholestasis of pregnancy",
+                        "Obstructive sleep apnea",
+                        "Pediatric obstructive sleep apnea",
+                        "Occult primary cancer (Carcinoma of unknown primary)",
+                        "Occupational asthma",
+                        "Ocular albinism (Albinism)",
+                        "Ocular rosacea",
+                        "Oculocutaneous albinism (Albinism)",
+                        "Oculosympathetic palsy (Horner syndrome)",
+                        "Oppositional defiant disorder (ODD)",
+                        "Jaw tumors and cysts",
+                        "Ovarian hyperstimulation syndrome (OHSS)",
+                        "Olfactory neuroblastoma (Esthesioneuroblastoma)",
+                        "Oligodendroglioma",
+                        "Oral lichen planus",
+                        "Onychomycosis (Nail fungus)",
+                        "Optic neuritis",
+                        "Oral cancer (Mouth cancer)",
+                        "Oral thrush (Oral candidiasis)",
+                        "Orchitis",
+                        "Orthostatic hypotension (Postural hypotension)",
+                        "Osteoarthritis",
+                        "Cervical spondylosis",
+                        "Osteochondritis dissecans",
+                        "Osteosarcoma",
+                        "Osteomyelitis",
+                        "Osteoporosis",
+                        "Swimmer's ear (Otitis externa)",
+                        "Ear infection (Otitis media)",
+                        "Ovarian cancer",
+                        "Ovarian cysts",
+                        "Overactive thyroid (Hyperthyroidism)",
+                        "Hurthle cell cancer (Oxyphil cell carcinoma)"
+                    ],
+                    P: [
+                        "PA/IVS",
+                        "PAD",
+                        "PAES",
+                        "Paget's disease of bone",
+                        "Paget's disease of the breast",
+                        "Painful bladder syndrome",
+                        "Painful intercourse",
+                        "Painful periods",
+                        "Palsy, Bell's",
+                        "Palsy, cerebral",
+                        "Palsy, facial",
+                        "Pancreas inflammation",
+                        "Pancreatic cancer",
+                        "Pancreatic cysts",
+                        "Pancreatic neuroendocrine tumors",
+                        "Pancreatitis",
+                        "Panic attacks and panic disorder",
+                        "PAPVR",
+                        "Paraganglioma",
+                        "Paraneoplastic neurological disorder",
+                        "Paraneoplastic neurological syndrome",
+                        "Paraneoplastic syndromes of the nervous system",
+                        "Parkinson's disease",
+                        "Parotid tumors",
+                        "Partial anomalous pulmonary venous connection",
+                        "Partial anomalous pulmonary venous return",
+                        "Parvovirus infection",
+                        "Patellar tendinitis",
+                        "Patellofemoral pain syndrome",
+                        "Patent ductus arteriosus (PDA)",
+                        "Patent foramen ovale",
+                        "Pathological gambling",
+                        "Pathological laughter and crying",
+                        "Pathological stealing",
+                        "PB",
+                        "PCOS",
+                        "PDA",
+                        "Peanut allergy",
+                        "Pectus excavatum",
+                        "Pediatric brain tumors",
+                        "Pediatric obstructive sleep apnea",
+                        "Pediatric white blood cell disorders",
+                        "Pediculosis capitis",
+                        "Pelvic inflammatory disease",
+                        "Pelvic organ prolapse",
+                        "Pelvic pain, chronic",
+                        "Pelvic support problems, uterine prolapse",
+                        "Pemphigus",
+                        "Penicillin allergy",
+                        "Peptic ulcer",
+                        "Perforated eardrum",
+                        "Pericardial effusion",
+                        "Pericardial inflammation",
+                        "Pericarditis",
+                        "Perimenopause",
+                        "Periodontal disease, gingivitis",
+                        "Periodontal disease, periodontitis",
+                        "Periodontitis",
+                        "Peripheral artery disease (PAD)",
+                        "Peripheral nerve injuries",
+                        "Peripheral nerve tumors",
+                        "Peripheral neurofibromatosis",
+                        "Peripheral neuropathy",
+                        "Peripheral vascular disease",
+                        "Peritoneal carcinomatosis",
+                        "Peritonitis",
+                        "Pernicious anemia",
+                        "Pernio",
+                        "Peroneal muscular atrophy",
+                        "Persistent depressive disorder",
+                        "Persistent post-concussive symptoms",
+                        "Personality disorder, antisocial",
+                        "Personality disorder, borderline",
+                        "Personality disorder, narcissistic",
+                        "Personality disorder, schizoid",
+                        "Personality disorder, schizotypal",
+                        "Personality disorders",
+                        "Pertussis",
+                        "Pes planus",
+                        "Pet allergy",
+                        "Petit mal seizure",
+                        "Peyronie's disease",
+                        "Pharyngitis",
+                        "Phenylketonuria (PKU)",
+                        "Pheochromocytoma",
+                        "Phlebitis",
+                        "Phobia, social",
+                        "Pick's disease",
+                        "PID",
+                        "Piles",
+                        "Pilocytic astrocytoma",
+                        "Pilonidal cyst",
+                        "Pilonidal dimple",
+                        "Pimples",
+                        "Pinched nerve",
+                        "Pineoblastoma",
+                        "Pink eye",
+                        "Pinworm infection",
+                        "Pituitary adenoma",
+                        "Pituitary insufficiency",
+                        "Pituitary neuroendocrine tumor",
+                        "Pituitary tumors",
+                        "Pityriasis rosea",
+                        "Pityriasis versicolor",
+                        "PKD",
+                        "PKU",
+                        "Placenta accreta",
+                        "Placenta previa",
+                        "Placental abruption",
+                        "Plague",
+                        "Plantar fasciitis",
+                        "Plantar neuroma",
+                        "Plantar warts",
+                        "Pleurisy",
+                        "Pleuritis",
+                        "Plexiform neurofibroma",
+                        "PLS",
+                        "PN",
+                        "Pneumonia",
+                        "Pneumonitis",
+                        "Pneumothorax",
+                        "PNF",
+                        "POEMS syndrome",
+                        "Poison ivy rash",
+                        "Polio",
+                        "Polycystic kidney disease",
+                        "Polycystic ovary syndrome",
+                        "Polycythemia vera",
+                        "Polyhydramnios",
+                        "Polymorphous light eruption",
+                        "Polymyalgia rheumatica",
+                        "Polymyositis",
+                        "Polyps, colon",
+                        "Polyps, endometrial",
+                        "Polyps, nasal",
+                        "Polyps, stomach",
+                        "Polyps, uterine",
+                        "Pompholyx",
+                        "Poor color vision",
+                        "Popliteal artery aneurysm",
+                        "Popliteal artery entrapment",
+                        "Popliteal cyst",
+                        "Porphyria",
+                        "Post-cardiac injury syndrome",
+                        "Post-chemotherapy cognitive impairment",
+                        "Post-concussion syndrome",
+                        "Posterior cortical atrophy",
+                        "Posterior prolapse",
+                        "Postherpetic neuralgia",
+                        "Postmyocardial infarction syndrome",
+                        "Postpartum depression",
+                        "Postpartum preeclampsia",
+                        "Post-polio syndrome",
+                        "Post-traumatic stress disorder (PTSD)",
+                        "Postural hypotension",
+                        "Post-vasectomy pain syndrome",
+                        "Pouchitis",
+                        "Prader-Labhart-Willi syndrome",
+                        "Prader-Willi syndrome",
+                        "Precocious puberty",
+                        "Prediabetes",
+                        "Preeclampsia",
+                        "Preexcitation syndrome",
+                        "Pregnancy-related hypertension",
+                        "Premature birth",
+                        "Premature ejaculation",
+                        "Premature ovarian failure",
+                        "Premature ovarian insufficiency",
+                        "Premature puberty",
+                        "Premature ventricular contractions (PVCs)",
+                        "Premenstrual syndrome (PMS)",
+                        "Presbycusis",
+                        "Presbyopia",
+                        "Prescription drug abuse",
+                        "Pressure sore",
+                        "Pressure ulcer",
+                        "Preterm labor",
+                        "Priapism",
+                        "Prickly heat",
+                        "Primary adrenal insufficiency",
+                        "Primary biliary cholangitis",
+                        "Primary immunodeficiency",
+                        "Primary lateral sclerosis (PLS)",
+                        "Primary ovarian insufficiency",
+                        "Primary polycythemia",
+                        "Primary progressive aphasia",
+                        "Primary sclerosing cholangitis (PSC)",
+                        "Proctitis",
+                        "Progeria",
+                        "Progressive supranuclear palsy",
+                        "Prolactinoma",
+                        "Prolapse, mitral valve",
+                        "Prolapsed bladder",
+                        "Prolapsed uterus",
+                        "Prostate cancer",
+                        "Prostate cancer recurrence",
+                        "Prostate gland enlargement",
+                        "Prostatitis",
+                        "Pruritis ani",
+                        "Pruritus"
+                    ],
+                    R: ["RA",
+                        "Rabies",
+                        "Radiation enteritis",
+                        "Radiation sickness",
+                        "Ramsay Hunt syndrome",
+                        "Rapid eye movement sleep behavior disorder",
+                        "Rapid gastric emptying",
+                        "Rapid heartbeat",
+                        "Rash, poison ivy",
+                        "Raynaud's disease",
+                        "Reactive arthritis",
+                        "Reactive attachment disorder",
+                        "Reading disability, specific",
+                        "Rebound headache",
+                        "Rectal cancer",
+                        "Rectal inflammation",
+                        "Rectal itching",
+                        "Rectal prolapse",
+                        "Rectal ulcer",
+                        "Rectocele",
+                        "Rectovaginal fistula",
+                        "Recurrent breast cancer",
+                        "Recurrent oral ulcers",
+                        "Recurrent prostate cancer",
+                        "Red eye",
+                        "Reflux, bile",
+                        "Reflux, vesicoureteral",
+                        "Regurgitation, aortic valve",
+                        "Regurgitation, mitral valve",
+                        "Reiter's syndrome",
+                        "REM sleep behavior disorder",
+                        "Renal artery disease",
+                        "Renal artery stenosis",
+                        "Renal cancer",
+                        "Renal lithiasis",
+                        "Renal vascular disease",
+                        "Residual limb pain",
+                        "Respiratory syncytial virus (RSV)",
+                        "Restless legs syndrome",
+                        "Retinal detachment",
+                        "Retinal diseases",
+                        "Retinoblastoma",
+                        "Retinopathy, diabetic",
+                        "Retractile testicle",
+                        "Retrograde ejaculation",
+                        "Rett syndrome",
+                        "Reye's syndrome",
+                        "Rhabdomyosarcoma",
+                        "Rheumatic fever",
+                        "Rheumatoid arthritis",
+                        "Rhinitis, allergic",
+                        "Rhinitis, nonallergic",
+                        "Rhinitis, vasomotor",
+                        "Rib fracture",
+                        "Rickets",
+                        "Rift Valley fever",
+                        "Ringing in the ear",
+                        "Ringworm (body)",
+                        "Ringworm (scalp)",
+                        "Ringworm of the foot",
+                        "RLS",
+                        "Road rage",
+                        "Rosacea",
+                        "Roseola",
+                        "Rotator cuff injury",
+                        "Rotavirus",
+                        "Round back",
+                        "RSV",
+                        "Rubella",
+                        "Rubeola",
+                        "Rumination syndrome",
+                        "Runner's knee",
+                        "Ruptured disk",
+                        "Ruptured eardrum",
+                        "Ruptured spleen"],
+                    S: ["Sacral dimple",
+                        "Sacroiliitis",
+                        "SAD",
+                        "Salivary gland tumors",
+                        "Salmonella infection",
+                        "Salmonellosis",
+                        "Sarcoidosis",
+                        "Sarcoma",
+                        "Sarcoma, bone cancer",
+                        "Sarcoma, soft tissue",
+                        "SBBO",
+                        "Scabies",
+                        "SCAD",
+                        "Scalded mouth syndrome",
+                        "Scarlatina",
+                        "Scarlet fever",
+                        "Schizoaffective disorder",
+                        "Schizoid personality disorder",
+                        "Schizophrenia",
+                        "Schizophrenia, adolescent",
+                        "Schizophrenia, childhood",
+                        "Schizophrenia, juvenile",
+                        "Schizotypal personality disorder",
+                        "Schwannoma",
+                        "Schwannomatosis",
+                        "SCI",
+                        "Sciatica",
+                        "Scleroderma",
+                        "Sclerosing cholangitis",
+                        "Sclerosing mesenteritis",
+                        "Sclerosis, multiple",
+                        "Sclerosis, systemic",
+                        "Scoliosis",
+                        "Scorpion sting",
+                        "Scrotal masses",
+                        "Seasonal affective disorder (SAD)",
+                        "Seasonal allergy",
+                        "Sebaceous carcinoma",
+                        "Sebaceous cysts",
+                        "Seborrheic dermatitis",
+                        "Seborrheic keratosis",
+                        "Secondary brain cancer",
+                        "Secondary hypertension",
+                        "SEID",
+                        "Seizure disorder",
+                        "Seizure, absence",
+                        "Seizure, febrile",
+                        "Seizure, grand mal",
+                        "Seizure, petit mal",
+                        "Seizure, temporal lobe",
+                        "Seizures",
+                        "Selective IgA deficiency",
+                        "Self harming",
+                        "Self-injury/cutting",
+                        "Separation anxiety disorder",
+                        "Sepsis",
+                        "Septal defect, atrial",
+                        "Septal defect, atrioventricular",
+                        "Septal defect, ventricular",
+                        "Septic arthritis",
+                        "Serotonin syndrome",
+                        "Severe acute respiratory syndrome",
+                        "Severe brain injury, coma",
+                        "Sex headaches",
+                        "Sexual dysfunction, female",
+                        "Sexual obsession",
+                        "Sexually transmitted diseases (STDs)",
+                        "Shaken baby syndrome",
+                        "Shellfish allergy",
+                        "Shigella infection",
+                        "Shin splints",
+                        "Shingles",
+                        "Short bowel syndrome",
+                        "Shoulder dislocation",
+                        "Shy-Drager syndrome",
+                        "SIBO",
+                        "Sick sinus syndrome",
+                        "Sickle cell anemia",
+                        "SIDS",
+                        "Sin Nombre virus infection",
+                        "Sinus headaches",
+                        "Sinusitis, acute",
+                        "Sinusitis, chronic",
+                        "Sjogren's syndrome",
+                        "SJS",
+                        "Skin cancer",
+                        "Skin cancer, melanoma",
+                        "Skin writing",
+                        "Skin, itchy",
+                        "Skipped heartbeats",
+                        "Skull base tumors",
+                        "Slapped cheek disease",
+                        "Sleep apnea",
+                        "Sleep apnea in children, obstructive",
+                        "Sleep apnea, central",
+                        "Sleep apnea, obstructive",
+                        "Sleep disorders",
+                        "Sleep terrors (night terrors)",
+                        "Sleepiness, daytime",
+                        "Sleeplessness",
+                        "Sleepwalking",
+                        "Slipped disk",
+                        "SLL",
+                        "Slow heartbeat",
+                        "Small bowel bacterial overgrowth",
+                        "Small bowel cancer",
+                        "Small bowel prolapse",
+                        "Small intestine prolapse",
+                        "Small lymphocytic lymphoma",
+                        "Small vessel disease",
+                        "Smallpox",
+                        "Snoring",
+                        "Social anxiety disorder (social phobia)",
+                        "Soft palate cancer",
+                        "Soft tissue sarcoma",
+                        "Solar keratosis",
+                        "Solar lentigines",
+                        "Solitary fibrous tumor",
+                        "Solitary rectal ulcer syndrome",
+                        "Somatic symptom disorder",
+                        "Somnambulism",
+                        "Sore throat",
+                        "Spasmodic torticollis",
+                        "Specific phobias",
+                        "Specific reading disability",
+                        "Spermatocele",
+                        "Spider bites",
+                        "Spina bifida",
+                        "Spinal arteriovenous malformation (AVM)",
+                        "Spinal cord injury",
+                        "Spinal cord tumor",
+                        "Spinal curvature",
+                        "Spinal fluid leak",
+                        "Spinal headaches",
+                        "Spinal stenosis",
+                        "Spinal tumor",
+                        "Splenomegaly",
+                        "Spondylosis, cervical",
+                        "Spontaneous coronary artery dissection (SCAD)",
+                        "Sprained ankle",
+                        "Sprains",
+                        "Squamous cell carcinoma of the skin",
+                        "Stage 4 (metastatic) colon cancer",
+                        "Stage 4 prostate cancer",
+                        "Stammering",
+                        "Staph infections",
+                        "STDs",
+                        "Steele-Richardson-Olszewski syndrome",
+                        "Stein-Leventhal syndrome",
+                        "Stenosing tenosynovitis",
+                        "Stenosis, aortic valve",
+                        "Stenosis, mitral valve",
+                        "Stenosis, pulmonary valve",
+                        "Stenosis, pyloric",
+                        "Stenosis, spinal",
+                        "Stevens-Johnson syndrome",
+                        "Stings, bee",
+                        "Stings, jellyfish",
+                        "Stings, scorpion",
+                        "Stomach cancer",
+                        "Stomach flu",
+                        "Stomach polyps",
+                        "Stomatodynia",
+                        "Stool holding",
+                        "Strawberry hemangioma",
+                        "Strep throat",
+                        "Stress cardiomyopathy",
+                        "Stress fractures",
+                        "Stress incontinence",
+                        "Stretch marks",
+                        "Stroke",
+                        "Stump pain",
+                        "Stuttering",
+                        "Stye (sty)",
+                        "Subarachnoid hemorrhage",
+                        "Subconjunctival hemorrhage (broken blood vessel in eye)",
+                        "Subfertility",
+                        "Substance abuse disorder",
+                        "Substance use disorder",
+                        "Sudden cardiac arrest",
+                        "Sudden infant death syndrome (SIDS)",
+                        "Suicide",
+                        "Suicide and suicidal thoughts",
+                        "Sun allergy",
+                        "Sun poisoning",
+                        "Sunburn",
+                        "Sunken chest",
+                        "Supranuclear palsy",
+                        "Supraventricular tachycardia",
+                        "Suspicious breast lumps",
+                        "SVT",
+                        "Sweating and body odor",
+                        "Sweating, abnormally excessive",
+                        "Swelling",
+                        "Swimmer's ear",
+                        "Swimmer's itch",
+                        "Swollen knee",
+                        "Swollen lymph nodes",
+                        "Syndrome X",
+                        "Synostosis",
+                        "Synovial sarcoma",
+                        "Syphilis",
+                        "Syringomyelia",
+                        "Systemic exertional intolerance disease",
+                        "Systemic lupus erythematosus",
+                        "Systemic mastocytosis",
+                        "Systemic sclerosis"],
+                    T: ["Tachycardia",
+                        "Takayasu's arteritis",
+                        "Takotsubo cardiomyopathy",
+                        "Tapeworm infection",
+                        "TAPVR",
+                        "Tay-Sachs disease",
+                        "TB",
+                        "TBI",
+                        "T-cell lymphoma",
+                        "Tears, decreased production",
+                        "Teen depression",
+                        "Teeth grinding",
+                        "Temporal arteritis",
+                        "Temporal lobe seizure",
+                        "Temporomandibular disorders",
+                        "Temporomandibular joint disorders",
+                        "TEN",
+                        "Tendinitis",
+                        "Tendinitis, Achilles",
+                        "Tendinitis, patellar",
+                        "Tendinopathy",
+                        "Tennis elbow",
+                        "Tenosynovitis, de Quervain's",
+                        "Tension headache",
+                        "Testicle, retractile",
+                        "Testicle, undescended",
+                        "Testicular cancer",
+                        "Testicular torsion",
+                        "Testosterone deficiency",
+                        "Tetanus",
+                        "Tetralogy of Fallot",
+                        "TGA",
+                        "Thalassemia",
+                        "Thoracic aortic aneurysm",
+                        "Thoracic outlet syndrome",
+                        "Three-day measles",
+                        "Throat cancer",
+                        "Thromboangiitis obliterans",
+                        "Thrombocytopenia",
+                        "Thrombocytosis",
+                        "Thrombophlebitis",
+                        "Thrush, oral",
+                        "Thumb arthritis",
+                        "Thunderclap headaches",
+                        "Thyroid cancer",
+                        "Thyroid gland enlargement",
+                        "Thyroid nodules",
+                        "Thyroid, overactive",
+                        "Thyroiditis, chronic lymphocytic",
+                        "TIA",
+                        "Tic douloureux",
+                        "Tinea barbae",
+                        "Tinea capitis",
+                        "Tinea corporis",
+                        "Tinea cruris",
+                        "Tinea pedis",
+                        "Tinea versicolor",
+                        "Tinnitus",
+                        "TMD",
+                        "TMJ disorders",
+                        "Toe walking in children",
+                        "Toenail fungus",
+                        "Tongue cancer",
+                        "Tongue tie",
+                        "Tonic-clonic (grand mal) seizure",
+                        "Tonic-clonic seizure",
+                        "Tonsil cancer",
+                        "Tonsillitis",
+                        "Tooth abscess",
+                        "Tooth decay",
+                        "Torn meniscus",
+                        "Torsion, testicular",
+                        "Torticollis, spasmodic",
+                        "Total anomalous pulmonary venous connection",
+                        "Total anomalous pulmonary venous return (TAPVR)",
+                        "Tourette syndrome",
+                        "Tourette's",
+                        "Toxemia",
+                        "Toxic epidermal necrolysis",
+                        "Toxic hepatitis",
+                        "Toxic shock syndrome",
+                        "Toxoplasmosis",
+                        "Tracheomalacia",
+                        "Trachoma",
+                        "Transient global amnesia",
+                        "Transient ischemic attack (TIA)",
+                        "Transposition of great vessels",
+                        "Transposition of the great arteries",
+                        "Transverse myelitis",
+                        "Traumatic brain injury",
+                        "Traumatic grief",
+                        "Traveler's diarrhea",
+                        "Trichinosis",
+                        "Trichomoniasis",
+                        "Trichotillomania (hair-pulling disorder)",
+                        "Tricuspid atresia",
+                        "Tricuspid valve disease",
+                        "Tricuspid valve regurgitation",
+                        "Trigeminal neuralgia",
+                        "Trigger finger",
+                        "Triple X syndrome",
+                        "Trisomy 21 syndrome",
+                        "Trisomy X",
+                        "Trouble swallowing",
+                        "Truncus arteriosus",
+                        "Trypanosomiasis, American",
+                        "Tuberculosis",
+                        "Tuberous sclerosis",
+                        "Tubular adenoma of the colon",
+                        "Tumor, salivary gland",
+                        "Tumor, spinal",
+                        "Turner syndrome",
+                        "Tympanic membrane perforation",
+                        "Type 1 diabetes",
+                        "Type 1 diabetes in children",
+                        "Type 2 diabetes",
+                        "Type 2 diabetes in children",
+                        "Typhoid fever"],
+                    U: ["Ulcer, aphthous",
+                        "Ulcer, peptic",
+                        "Ulcer, rectal",
+                        "Ulcerative colitis",
+                        "Ulnar wrist pain",
+                        "Ulnar-sided wrist pain",
+                        "Umbilical hernia",
+                        "Uncontrollable laughter and crying",
+                        "Underactive thyroid",
+                        "Under-eye puffiness",
+                        "Undescended testicle",
+                        "Undifferentiated pleomorphic sarcoma",
+                        "Upset stomach",
+                        "Ureteral cancer",
+                        "Ureteral obstruction",
+                        "Urethral stricture",
+                        "Urinary incontinence",
+                        "Urinary tract infection (UTI)",
+                        "Urine color",
+                        "Urine, blood in",
+                        "Urticaria",
+                        "Uterine cancer",
+                        "Uterine fibroids",
+                        "Uterine leiomyoma",
+                        "Uterine myoma",
+                        "Uterine polyps",
+                        "Uterine prolapse",
+                        "Uterus didelphys",
+                        "UTI",
+                        "Uveitis"],
+                    V: ["Vaginal agenesis",
+                        "Vaginal atrophy",
+                        "Vaginal cancer",
+                        "Vaginal candidiasis",
+                        "Vaginal fistula",
+                        "Vaginal prolapse, posterior",
+                        "Vaginitis",
+                        "Valley fever",
+                        "Valvular heart disease",
+                        "Variant CJD",
+                        "Varicella",
+                        "Varices, esophageal",
+                        "Varicocele",
+                        "Varicose veins",
+                        "Variola",
+                        "Vascular claudication",
+                        "Vascular dementia",
+                        "Vascular rings",
+                        "Vasculitis",
+                        "Vasomotor rhinitis",
+                        "Vasovagal syncope",
+                        "vCJD",
+                        "Velocardiofacial syndrome",
+                        "Venereal warts",
+                        "Ventricular fibrillation",
+                        "Ventricular premature contraction",
+                        "Ventricular septal defect (VSD)",
+                        "Ventricular tachycardia",
+                        "Vertebral tumor",
+                        "Vesicoureteral reflux",
+                        "Vestibular schwannoma",
+                        "VEXAS syndrome",
+                        "V-fib",
+                        "Viral gastroenteritis (stomach flu)",
+                        "Viral hemorrhagic fevers",
+                        "Vitamin deficiency anemia",
+                        "Vitiligo",
+                        "Vocal cord paralysis",
+                        "Vocal fold paralysis",
+                        "Voice disorders",
+                        "Von Recklinghausen’s disease",
+                        "Von Recklinghausen’s neurofibromatosis",
+                        "Von Recklinghausen’s phakomatosis",
+                        "Von Willebrand disease",
+                        "VPCs",
+                        "Vulvar cancer",
+                        "Vulvodynia"],
+                    W: ["Waldenstrom macroglobulinemia",
+                        "Warts, common",
+                        "Warts, genital",
+                        "Warts, plantar",
+                        "Warts, venereal",
+                        "Water on the knee",
+                        "Wegener's granulomatosis",
+                        "Wermer syndrome",
+                        "Wermer's syndrome",
+                        "Wet age-related macular degeneration",
+                        "Wet AMD",
+                        "Wet macular degeneration",
+                        "Wheat allergy",
+                        "Whiplash",
+                        "Whipple's disease",
+                        "White blood cell disorders in children",
+                        "White spot disease",
+                        "Whiteheads",
+                        "Whooping cough",
+                        "Wilms tumor",
+                        "Wilson's disease",
+                        "Wisdom teeth, impacted",
+                        "Wolff-Parkinson-White (WPW) syndrome",
+                        "Wolff-Parkinson-White accessory pathway-related tachycardia",
+                        "Wrinkle",
+                        "Wrinkles",
+                        "Wrist fracture",
+                        "Wrist pain"],
+                    X: ["Xerosis",
+                        "Xerostomia",
+                        "X-linked agammaglobulinemia",
+                        "XXX syndrome"],
+                    Y: ["Yeast infection (vaginal)", "Yips"],
+                    Z: ["Zenker's diverticulum",
+                        "Zollinger-Ellison syndrome",
+                        "Zoster"],
+                    "#": ["123 Health Check"]
+                };
+
+                const alphabetContainer = document.getElementById("alphabetContainer");
+                const resultContainer = document.getElementById("resultContainer");
+                const searchInput = document.getElementById("searchInput");
+
+                /* --- GENERATE A-Z --- */
+                const letters = "ABCDEFGHIJKLMNOPRSTUVWXYZ".split("");
+                letters.forEach(letter => {
+                    const a = document.createElement("a");
+                    a.href = `#${letter}`;
+                    a.textContent = letter;
+                    // Perfect circles for both mobile and desktop
+                    a.className = `
+                    w-12 h-12 sm:w-14 sm:h-14
+                    flex items-center justify-center
+                    rounded-full border-2 border-blue-100
+                    bg-white text-lg font-bold text-blue-600
+                    shadow-sm transition-all duration-200
+                    hover:scale-110 hover:border-indigo-500 hover:text-indigo-600 hover:shadow-lg
+                    cursor-pointer no-underline
+                `;
+
+                    a.onclick = (e) => {
+                        e.preventDefault();
+                        // Reset all
+                        document.querySelectorAll('#alphabetContainer a').forEach(el => {
+                            el.classList.remove('bg-gradient-to-br', 'from-blue-600', 'to-indigo-700', 'text-white', 'border-transparent', 'shadow-indigo-200');
+                            el.classList.add('bg-white', 'text-blue-600', 'border-blue-100');
+                        });
+                        // Set active
+                        a.classList.remove('bg-white', 'text-blue-600', 'border-blue-100');
+                        a.classList.add('bg-gradient-to-br', 'from-blue-600', 'to-indigo-700', 'text-white', 'border-transparent', 'shadow-xl', 'shadow-indigo-200');
+
+                        showDiseases(letter);
+                    };
+                    alphabetContainer.appendChild(a);
+                });
+
+                /* --- WHATSAPP FUNCTION --- */
+                function sendToWhatsApp(disease) {
+                    const phoneNumber = "919348148310";
+                    const msg = `Hello, I'm interested in learning more about: ${disease}`;
+                    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`, "_blank");
+                }
+
+                /* --- SHOW DISEASES --- */
+                function showDiseases(letter) {
+                    resultContainer.innerHTML = "";
+                    const list = diseaseData[letter] || [];
+
+                    if (list.length === 0) {
+                        resultContainer.innerHTML = `
+                        <div class="p-8 text-center bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200 text-gray-400">
+                            No conditions found for "${letter}"
+                        </div>`;
+                        return;
+                    }
+
+                    list.forEach(item => {
+                        const div = document.createElement("div");
+                        div.className = "group p-5 bg-white border-2 border-gray-100 rounded-2xl flex justify-between items-center hover:border-green-400 hover:shadow-lg hover:shadow-green-50/50 cursor-pointer transition-all transform hover:-translate-y-1";
+                        div.innerHTML = `
+                        <div class="flex items-center space-x-3">
+                            <span class="w-2 h-2 rounded-full bg-blue-500 group-hover:bg-green-500 transition-colors"></span>
+                            <span class="font-bold text-gray-700 group-hover:text-gray-900 text-lg">${item}</span>
+                        </div>
+                        <div class="flex items-center space-x-2 bg-green-50 px-3 py-1 rounded-full">
+                           <span class="text-green-600 text-xs font-black uppercase tracking-widest">WhatsApp</span>
+                           <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        </div>
+                    `;
+                        div.onclick = () => sendToWhatsApp(item);
+                        resultContainer.appendChild(div);
+                    });
+                }
+
+                /* --- SEARCH LOGIC --- */
+                searchInput.addEventListener("input", (e) => {
+                    const val = e.target.value.toLowerCase();
+                    if (!val) {
+                        resultContainer.innerHTML = '<div class="text-center py-10 opacity-40 italic text-gray-500">Select a letter or search...</div>';
+                        return;
+                    }
+
+                    resultContainer.innerHTML = "";
+                    const all = Object.values(diseaseData).flat();
+                    const filtered = [...new Set(all)].filter(d => d.toLowerCase().includes(val));
+
+                    if (filtered.length === 0) {
+                        resultContainer.innerHTML = `<div class="p-8 text-center text-gray-400 italic">No matches for "${val}"</div>`;
+                        return;
+                    }
+
+                    filtered.forEach(item => {
+                        const div = document.createElement("div");
+                        div.className = "p-4 border-b hover:bg-green-50 flex justify-between items-center cursor-pointer transition-colors";
+                        div.innerHTML = `<span class="font-semibold text-gray-700">${item}</span> <span class="text-green-600 font-bold text-xs uppercase bg-green-100 px-2 py-1 rounded">Ask WA</span>`;
+                        div.onclick = () => sendToWhatsApp(item);
+                        resultContainer.appendChild(div);
+                    });
+                });
+            });
+        }
+
+        atoz();
     </script>
 </body>
 
