@@ -98,16 +98,72 @@
                 </nav>
             </div>
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t border-pink-100 pt-4">
-                <div class="flex flex-col space-y-3">
-                    <a href="#home" class="text-slate-text hover:text-primary transition-colors font-medium py-2">🏠
-                        Home</a>
-                    <a href="#about" class="text-slate-text hover:text-primary transition-colors font-medium py-2">👨‍⚕️
-                        About</a>
-                    <a href="#services" class="text-slate-text hover:text-primary transition-colors font-medium py-2">🏥
-                        Services</a>
-                    <a href="#contact" class="text-slate-text hover:text-primary transition-colors font-medium py-2">📞
-                        Contact</a>
+            <div id="mobile-menu"
+                class="hidden lg:hidden mt-4 pb-6 border-t border-slate-100 pt-4 animate-in fade-in slide-in-from-top-4 duration-300">
+                <div class="flex flex-col space-y-1">
+                    <a href="#home"
+                        class="group flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200">
+                        <svg class="w-5 h-5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                        <span class="font-medium">Home</span>
+                    </a>
+
+                    <a href="#about"
+                        class="group flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200">
+                        <svg class="w-5 h-5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <span class="font-medium">About</span>
+                    </a>
+
+                    <a href="#services"
+                        class="group flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200">
+                        <svg class="w-5 h-5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" stroke-width="2">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg>
+                        <span class="font-medium">Services</span>
+                    </a>
+
+                    <a href="#contact"
+                        class="group flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200">
+                        <svg class="w-5 h-5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" stroke-width="2">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                        </svg>
+                        <span class="font-medium">Contact</span>
+                    </a>
+                    <a href="#insurance"
+                        class="group flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200">
+                        <svg class="w-5 h-5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" stroke-width="2">
+                            <path
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                            </path>
+                        </svg>
+                        <span class="font-medium">Insurances</span>
+                    </a>
+
+                    <a href="#global-care"
+                        class="group flex items-center gap-3 px-4 py-3 text-slate-600 hover:text-blue-600 hover:bg-blue-50 rounded-xl transition-all duration-200">
+                        <svg class="w-5 h-5 opacity-70 group-hover:opacity-100" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path
+                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                            </path>
+                        </svg>
+                        <span class="font-medium">National & International Care</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -186,8 +242,8 @@
     </section>
 
     <!-- A to z section -->
-    <section class="max-w-2xl mx-auto p-4 sm:p-8">
-        <div class="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl border border-white p-6 sm:p-10">
+    <section class="lg:max-w-7xl max-w-2xl mx-auto p-4 sm:p-8">
+        <div class="bg-white/80 backdrop-blur-md  border border-white p-6 sm:p-10">
 
             <h2
                 class="text-2xl sm:text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-700 mb-2 text-center sm:text-left">
@@ -198,29 +254,6 @@
             </p>
 
             <div id="alphabetContainer" class="grid grid-cols-5 sm:grid-cols-7 gap-3 mb-10 justify-items-center">
-            </div>
-
-            <div class="space-y-4">
-                <label class="block text-sm font-bold text-gray-700 uppercase tracking-widest ml-1">
-                    Quick Search
-                </label>
-                <div class="relative group">
-                    <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                        <svg class="w-5 h-5 text-blue-500 group-focus-within:text-indigo-600 transition-colors"
-                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
-                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
-                    </div>
-                    <input id="searchInput" type="text" placeholder="Type a disease (e.g. Asthma)"
-                        class="w-full border-2 border-blue-100 rounded-2xl py-4 pl-12 pr-6 text-lg focus:outline-none focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 transition-all shadow-sm placeholder-gray-400" />
-                </div>
-            </div>
-
-            <div id="resultContainer" class="mt-8 space-y-4 max-h-screen relative overflow-y-auto transition-all duration-300">
-                <div class="text-center py-10 opacity-40">
-                    <p class="text-gray-500 italic">Select a letter to see results...</p>
-                </div>
             </div>
         </div>
     </section>
@@ -755,8 +788,200 @@
         </div>
     </section>
 
-    <!-- New health camp section with community images -->
+    <!-- insurances -->
+    <section id="ins" class="py-20 bg-gradient-to-b from-white to-slate-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-blue-600 font-bold tracking-widest uppercase text-sm">Financial Partners</span>
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-3 mb-6">Cashless Treatment & TPA
+                    Support</h2>
+                <p class="text-lg text-slate-600">Humne major insurance providers aur TPAs ke sath tie-up kiya hai taaki
+                    aapka poora dhyan sirf recovery par ho, bills par nahi.</p>
+            </div>
 
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-400 transition-all group">
+                    <div
+                        class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
+                        <svg class="w-8 h-8 text-blue-600 group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.040L3 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622l-.982-3.072z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Private Insurance</h3>
+                    <p class="text-slate-500 text-sm mb-4">Star Health, HDFC Ergo, ICICI Lombard, Niva Bupa, Care Health
+                        aur kai anya.</p>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-50">
+                        <span class="bg-slate-100 px-3 py-1 rounded-full text-xs font-medium">95% Approval Rate</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-indigo-400 transition-all group">
+                    <div
+                        class="w-14 h-14 bg-indigo-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors">
+                        <svg class="w-8 h-8 text-indigo-600 group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">TPA Partners</h3>
+                    <p class="text-slate-500 text-sm mb-4">MediAssist, Paramount, MD India, Heritage, Raksha TPA, United
+                        Healthcare.</p>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-50">
+                        <span class="bg-slate-100 px-3 py-1 rounded-full text-xs font-medium">Cashless Assistance</span>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:border-emerald-400 transition-all group">
+                    <div
+                        class="w-14 h-14 bg-emerald-100 rounded-lg flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors">
+                        <svg class="w-8 h-8 text-emerald-600 group-hover:text-white" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Govt. & Corporate</h3>
+                    <p class="text-slate-500 text-sm mb-4">CGHS, ECHS, Ayushman Bharat (PMJAY), aur sabhi bade PSU
+                        panels.</p>
+                    <div class="flex flex-wrap gap-2 pt-4 border-t border-slate-50">
+                        <span class="bg-slate-100 px-3 py-1 rounded-full text-xs font-medium">Panel Listed</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl p-8 md:p-12 border border-slate-100 shadow-2xl overflow-hidden">
+                <h4 class="text-center text-slate-500 font-bold uppercase text-sm tracking-[0.2em] mb-12">
+                    Our Trusted Insurance Networks
+                </h4>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center justify-items-center">
+
+                    <div
+                        class="w-full h-24 flex items-center justify-center p-2 group bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <img src="https://imgs.search.brave.com/X6Q5LJfwNcEBo0DYU17uFBXU_vDz860O5ogXtBQJNP4/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbmdo/ZHByby5jb20vd3At/Y29udGVudC90aGVt/ZXMvcG5naGRwcm8v/ZG93bmxvYWQvc29j/aWFsLW1lZGlhLWFu/ZC1icmFuZHMvc3Rh/ci1oZWFsdGgtaW5z/dXJhbmNlLWxvZ28u/cG5n"
+                            class="max-h-16 w-auto object-contain  group-hover:grayscale-0 transition-all scale-110"
+                            alt="Star Health">
+                    </div>
+
+                    <div
+                        class="w-full h-24 flex items-center justify-center p-2 group bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <img src="https://imgs.search.brave.com/7zkqqLtr-GX5XvCRRkQV_EpXN0lfsJrBX2QMbWkzBJA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RzLzQwNC8y/NGM4ZDcxNjkzODE1/OTUuWTNKdmNDdzVP/VGtzTnpneUxEQXNN/VEE0LmpwZw"
+                            class="max-h-16 w-auto object-contain  group-hover:grayscale-0 transition-all scale-110"
+                            alt="HDFC Ergo">
+                    </div>
+
+                    <div
+                        class="w-full h-24 flex items-center justify-center p-2 group bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <img src="https://imgs.search.brave.com/kpuhU-jLp5OomEJG8kl4r-E676FChfTIqoYMlVJ8hS0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzU1LzIvaWNpY2kt/YmFuay1sb2dvLXBu/Z19zZWVrbG9nby01/NTY1MDAucG5n"
+                            class="max-h-20 w-auto object-contain  group-hover:grayscale-0 transition-all scale-110"
+                            alt="ICICI">
+                    </div>
+
+                    <div
+                        class="w-full h-24 flex items-center justify-center p-2 group bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <img src="https://imgs.search.brave.com/dkbKTMO68yCcG2vRwSGiauWOGhoTpREMC-UJFcNhVdc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cG9saWN5eC5jb20v/Y21zLW1lZGlhL25p/dmEtYnVwYS1oZWFs/dGgtaW5zdXJhbmNl/LWxvZ28td2ViMzg5/OS0xNzI3MDcyODI0/LndlYnA"
+                            class="max-h-16 w-auto object-contain  group-hover:grayscale-0 transition-all scale-110"
+                            alt="Niva Bupa">
+                    </div>
+
+                    <div
+                        class="w-full h-24 flex items-center justify-center p-2 group bg-slate-50 rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300">
+                        <img src="https://imgs.search.brave.com/uG1H1HgrGFOU_5FKn128geLd2ZSfbGh3pUGv-7nR-ZM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c21oYmhvcGFsLmNv/bS91cGxvYWQvaW5z/dXJhbmNlX2NvbXBh/bmllcy9pbnN1cmFu/Y2UtY29tcGFueS1t/ZWRpLWFzc2lzdC0x/NzA0ODgxODg2Lmpw/Zw"
+                            class="max-h-16 w-auto object-contain grayscale group-hover:grayscale-0 transition-all scale-110"
+                            alt="MediAssist">
+                    </div>
+
+                    <div
+                        class="w-full h-24 flex flex-col items-center justify-center border-2 border-dashed border-blue-100 rounded-xl hover:border-blue-400 hover:bg-blue-50 transition-all cursor-pointer">
+                        <span class="text-blue-600 font-extrabold text-xl">+20</span>
+                        <span class="text-blue-400 text-[10px] font-bold uppercase tracking-wider">Partners</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- int and internation patients care -->
+    <section id="int" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-blue-900 mb-6">Patient Care Excellence</h2>
+
+                    <div class="flex space-x-4 mb-8 border-b">
+                        <button onclick="switchTab('national')" id="btn-national"
+                            class="pb-2 px-4 text-blue-600 border-b-2 border-blue-600 font-medium transition-all">National
+                            Patients</button>
+                        <button onclick="switchTab('international')" id="btn-international"
+                            class="pb-2 px-4 text-slate-500 hover:text-blue-600 font-medium transition-all">International
+                            Patients</button>
+                    </div>
+
+                    <div id="content-national" class="space-y-4">
+                        <p class="text-slate-600">Pure desh se aane wale patients ke liye humne special facilities rakhi
+                            hain:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-slate-700"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span> Fast-track appointments for
+                                outstation patients.</li>
+                            <li class="flex items-center text-slate-700"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span> Nearby guest house & hotel
+                                assistance.</li>
+                            <li class="flex items-center text-slate-700"><span
+                                    class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span> Tele-consultation follow-ups.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="content-international" class="space-y-4 hidden">
+                        <p class="text-slate-600">World-class healthcare for our global patients with end-to-end
+                            support:</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-center text-slate-700"><span
+                                    class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span> Visa Invitation Letters &
+                                Documentation.</li>
+                            <li class="flex items-center text-slate-700"><span
+                                    class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span> Language Interpreters &
+                                Airport Pick-up.</li>
+                            <li class="flex items-center text-slate-700"><span
+                                    class="w-2 h-2 bg-indigo-500 rounded-full mr-3"></span> Customized Cuisine & Prayer
+                                Rooms.</li>
+                        </ul>
+                    </div>
+
+                    <button
+                        class="mt-8 bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg shadow-blue-200">
+                        Contact Care Desk
+                    </button>
+                </div>
+
+                <div class="w-full md:w-1/2">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=800&q=80"
+                            alt="Medical Care" class="rounded-2xl shadow-2xl">
+                        <div
+                            class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-slate-100 hidden md:block">
+                            <p class="text-blue-600 font-bold text-2xl">24/7</p>
+                            <p class="text-slate-500 text-sm">Patient Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New health camp section with community images -->
     <section class="py-16 bg-slate-50 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4">
 
@@ -2777,72 +3002,26 @@
                 const letters = "ABCDEFGHIJKLMNOPRSTUVWXYZ".split("");
                 letters.forEach(letter => {
                     const a = document.createElement("a");
-                    a.href = `#${letter}`;
+                    a.href = `testing.html?letter=${letter}`;
                     a.textContent = letter;
-                    // Perfect circles for both mobile and desktop
+
                     a.className = `
-                    w-12 h-12 sm:w-14 sm:h-14
-                    flex items-center justify-center
-                    rounded-full border-2 border-blue-100
-                    bg-white text-lg font-bold text-blue-600
-                    shadow-sm transition-all duration-200
-                    hover:scale-110 hover:border-indigo-500 hover:text-indigo-600 hover:shadow-lg
-                    cursor-pointer no-underline
-                `;
+        w-12 h-12 sm:w-14 sm:h-14
+        flex items-center justify-center
+        rounded-full border-2 border-blue-100
+        bg-white text-lg font-bold text-blue-600
+        shadow-sm transition-all duration-200
+        hover:scale-110 hover:border-indigo-500 hover:text-indigo-600 hover:shadow-lg
+        cursor-pointer no-underline
+    `;
 
                     a.onclick = (e) => {
                         e.preventDefault();
-                        // Reset all
-                        document.querySelectorAll('#alphabetContainer a').forEach(el => {
-                            el.classList.remove('bg-gradient-to-br', 'from-blue-600', 'to-indigo-700', 'text-white', 'border-transparent', 'shadow-indigo-200');
-                            el.classList.add('bg-white', 'text-blue-600', 'border-blue-100');
-                        });
-                        // Set active
-                        a.classList.remove('bg-white', 'text-blue-600', 'border-blue-100');
-                        a.classList.add('bg-gradient-to-br', 'from-blue-600', 'to-indigo-700', 'text-white', 'border-transparent', 'shadow-xl', 'shadow-indigo-200');
-
-                        showDiseases(letter);
+                        window.location.href = `testing.html?letter=${letter}`;
                     };
+
                     alphabetContainer.appendChild(a);
                 });
-
-                /* --- WHATSAPP FUNCTION --- */
-                function sendToWhatsApp(disease) {
-                    const phoneNumber = "919348148310";
-                    const msg = `Hello, I'm interested in learning more about: ${disease}`;
-                    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`, "_blank");
-                }
-
-                /* --- SHOW DISEASES --- */
-                function showDiseases(letter) {
-                    resultContainer.innerHTML = "";
-                    const list = diseaseData[letter] || [];
-
-                    if (list.length === 0) {
-                        resultContainer.innerHTML = `
-                        <div class="p-8 text-center bg-gray-50 rounded-2xl border-2 border-dashed border-gray-200 text-gray-400">
-                            No conditions found for "${letter}"
-                        </div>`;
-                        return;
-                    }
-
-                    list.forEach(item => {
-                        const div = document.createElement("div");
-                        div.className = "group p-5 bg-white border-2 border-gray-100 rounded-2xl flex justify-between items-center hover:border-green-400 hover:shadow-lg hover:shadow-green-50/50 cursor-pointer transition-all transform hover:-translate-y-1";
-                        div.innerHTML = `
-                        <div class="flex items-center space-x-3">
-                            <span class="w-2 h-2 rounded-full bg-blue-500 group-hover:bg-green-500 transition-colors"></span>
-                            <span class="font-bold text-gray-700 group-hover:text-gray-900 text-lg">${item}</span>
-                        </div>
-                        <div class="flex items-center space-x-2 bg-green-50 px-3 py-1 rounded-full">
-                           <span class="text-green-600 text-xs font-black uppercase tracking-widest">WhatsApp</span>
-                           <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-                        </div>
-                    `;
-                        div.onclick = () => sendToWhatsApp(item);
-                        resultContainer.appendChild(div);
-                    });
-                }
 
                 /* --- SEARCH LOGIC --- */
                 searchInput.addEventListener("input", (e) => {
@@ -2873,6 +3052,25 @@
         }
 
         atoz();
+
+        function switchTab(type) {
+            const natContent = document.getElementById('content-national');
+            const intContent = document.getElementById('content-international');
+            const natBtn = document.getElementById('btn-national');
+            const intBtn = document.getElementById('btn-international');
+
+            if (type === 'national') {
+                natContent.classList.remove('hidden');
+                intContent.classList.add('hidden');
+                natBtn.className = "pb-2 px-4 text-blue-600 border-b-2 border-blue-600 font-medium";
+                intBtn.className = "pb-2 px-4 text-slate-500 hover:text-blue-600 font-medium";
+            } else {
+                intContent.classList.remove('hidden');
+                natContent.classList.add('hidden');
+                intBtn.className = "pb-2 px-4 text-blue-600 border-b-2 border-blue-600 font-medium";
+                natBtn.className = "pb-2 px-4 text-slate-500 hover:text-blue-600 font-medium";
+            }
+        }
     </script>
 </body>
 
