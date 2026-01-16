@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mastering Diabetes Management | Health Insights</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .progress-bar { height: 4px; background: #2563eb; width: 0%; position: fixed; top: 0; left: 0; z-index: 100; transition: width 0.1s; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div id="progressBar" class="progress-bar"></div>
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-blue-600 font-bold">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+            <div class="text-sm font-bold text-slate-400 uppercase tracking-widest">Medical Insight</div>
+        </div>
+    </nav>
+
+    <header class="bg-white pt-12 pb-20">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <span class="px-4 py-1.5 bg-blue-50 text-blue-600 text-xs font-black rounded-full uppercase tracking-widest mb-6 inline-block">Chronic Care</span>
+            <h1 class="text-4xl md:text-6xl font-black text-slate-900 mb-8 leading-tight">Mastering Diabetes Management: A Lifestyle Guide</h1>
+            
+            <div class="flex items-center gap-6 pb-10 border-b border-slate-100">
+                <img src="https://ui-avatars.com/api/?name=Dr+Jagadeesh&background=2563eb&color=fff" class="w-12 h-12 rounded-full shadow-lg">
+                <div>
+                    <p class="font-bold text-slate-900">Dr. Jagadeesh Kumar</p>
+                    <p class="text-sm text-slate-500">Jan 16, 2026 • 8 min read</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 -mt-10">
+        <div class="max-w-4xl mx-auto">
+            <img src="https://i.pinimg.com/736x/18/29/ff/1829ff24639e5688682277565a134fc0.jpg" 
+                 class="w-full h-[450px] object-cover rounded-[3rem] shadow-2xl mb-12 border-8 border-white">
+
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-2/3 prose prose-slate prose-lg">
+                    <p class="text-xl text-slate-600 leading-relaxed mb-8">
+                        Diabetes management is not just about avoiding sugar; it's about creating a sustainable balance between your nutrition, physical activity, and medical care.
+                    </p>
+
+                    <h2 class="text-3xl font-black text-slate-900 mt-10 mb-4">1. Balanced Nutrition</h2>
+                    <p class="mb-6">Monitoring carbohydrate intake is crucial. Focus on whole grains, leafy greens, and lean proteins. Small, frequent meals can help maintain stable blood glucose levels throughout the day.</p>
+                    
+                    <div class="bg-blue-50 p-8 rounded-[2rem] border-l-8 border-blue-600 my-10">
+                        <i class="fas fa-lightbulb text-blue-600 text-2xl mb-4"></i>
+                        <p class="font-bold text-blue-900 italic">"The Glycemic Index (GI) is your best friend. Choose foods with a low GI to prevent sudden insulin spikes."</p>
+                    </div>
+
+                    <h2 class="text-3xl font-black text-slate-900 mt-10 mb-4">2. Regular Physical Activity</h2>
+                    <p class="mb-6">Exercise helps your muscles use blood sugar for energy. Aim for at least 30 minutes of moderate activity, like brisk walking, five days a week.</p>
+
+                    <ul class="space-y-4 mb-10">
+                        <li class="flex gap-3 items-start font-medium text-slate-700">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            Check blood sugar before and after workouts.
+                        </li>
+                        <li class="flex gap-3 items-start font-medium text-slate-700">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            Stay hydrated with water, not sports drinks.
+                        </li>
+                        <li class="flex gap-3 items-start font-medium text-slate-700">
+                            <i class="fas fa-check-circle text-green-500 mt-1"></i>
+                            Wear proper footwear to prevent foot injuries.
+                        </li>
+                    </ul>
+
+                    <h2 class="text-3xl font-black text-slate-900 mt-10 mb-4">3. Consistent Monitoring</h2>
+                    <p>Regularly checking your blood sugar levels provides vital data for you and your doctor to adjust your treatment plan effectively.</p>
+                </div>
+
+                <aside class="lg:w-1/3">
+                    <div class="sticky top-28 space-y-8">
+                        <div class="bg-slate-900 text-white p-8 rounded-[2.5rem] shadow-xl relative overflow-hidden">
+                            <div class="relative z-10">
+                                <h3 class="text-xl font-black mb-4">Need a personalized plan?</h3>
+                                <p class="text-slate-400 text-sm mb-6">Book a consultation with Dr. Jagadeesh for a tailored diabetes management program.</p>
+                                <a href="contact.html" class="block text-center bg-blue-600 hover:bg-blue-500 py-4 rounded-2xl font-bold transition-all">Book Appointment</a>
+                            </div>
+                            <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-blue-500/20 rounded-full"></div>
+                        </div>
+
+                        <div class="bg-white p-8 rounded-[2.5rem] border border-slate-100 shadow-sm">
+                            <h3 class="font-black text-slate-900 mb-6">Quick Health Tips</h3>
+                            <div class="space-y-6">
+                                <div class="flex gap-4">
+                                    <span class="w-8 h-8 bg-green-100 text-green-600 rounded-lg flex items-center justify-center flex-shrink-0 font-bold">01</span>
+                                    <p class="text-sm font-semibold text-slate-600">Drink 3 liters of water daily.</p>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span class="w-8 h-8 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center flex-shrink-0 font-bold">02</span>
+                                    <p class="text-sm font-semibold text-slate-600">Get 7-8 hours of sound sleep.</p>
+                                </div>
+                                <div class="flex gap-4">
+                                    <span class="w-8 h-8 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center flex-shrink-0 font-bold">03</span>
+                                    <p class="text-sm font-semibold text-slate-600">Avoid processed sugars completely.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <h2 class="text-3xl font-black text-slate-900 mt-12 mb-6">Sample 1-Day Diet Chart</h2>
+<div class="overflow-x-auto mb-10">
+    <table class="w-full text-left border-collapse bg-white rounded-2xl overflow-hidden shadow-sm">
+        <thead class="bg-blue-600 text-white">
+            <tr>
+                <th class="p-4 uppercase text-xs tracking-widest">Time</th>
+                <th class="p-4 uppercase text-xs tracking-widest">Recommended Food</th>
+            </tr>
+        </thead>
+        <tbody class="text-slate-600">
+            <tr class="border-b border-slate-100">
+                <td class="p-4 font-bold text-slate-900">Early Morning</td>
+                <td class="p-4">1 Glass warm water + 5 soaked almonds</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="p-4 font-bold text-slate-900">Breakfast</td>
+                <td class="p-4">Oats with low-fat milk OR Vegetable Poha</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+                <td class="p-4 font-bold text-slate-900">Mid-Morning</td>
+                <td class="p-4">A small bowl of Papaya or an Apple</td>
+            </tr>
+            <tr class="border-b border-slate-100 bg-slate-50/50">
+                <td class="p-4 font-bold text-slate-900">Lunch</td>
+                <td class="p-4">2 Multigrain Rotis + 1 Bowl Dal + Seasonal Veg + Salad</td>
+            </tr>
+            <tr class="border-b border-slate-100">
+                <td class="p-4 font-bold text-slate-900">Evening</td>
+                <td class="p-4">Green Tea + Roasted Chana (Gram)</td>
+            </tr>
+            <tr>
+                <td class="p-4 font-bold text-slate-900">Dinner</td>
+                <td class="p-4">1 Roti + Vegetable Soup OR Grilled Paneer/Chicken</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<h2 class="text-3xl font-black text-slate-900 mt-12 mb-6">Target Blood Sugar Levels</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10">
+    <div class="p-6 bg-green-50 border border-green-100 rounded-[2rem]">
+        <h4 class="font-black text-green-700 uppercase text-xs mb-2">Fasting (Empty Stomach)</h4>
+        <p class="text-2xl font-black text-green-800">70 – 100 mg/dL</p>
+        <p class="text-sm text-green-600 mt-1 font-medium">This is considered the normal range.</p>
+    </div>
+    <div class="p-6 bg-blue-50 border border-blue-100 rounded-[2rem]">
+        <h4 class="font-black text-blue-700 uppercase text-xs mb-2">After Meals (2 Hours)</h4>
+        <p class="text-2xl font-black text-blue-800">Less than 140 mg/dL</p>
+        <p class="text-sm text-blue-600 mt-1 font-medium">Postprandial target for healthy adults.</p>
+    </div>
+</div>
+    </main>
+
+    <footer class="bg-white border-t border-slate-100 mt-20 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-400 font-bold text-sm uppercase tracking-widest">© 2026 Dr. Jagadeesh Kumar</p>
+        </div>
+    </footer>
+
+    <script>
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progressBar").style.width = scrolled + "%";
+        };
+    </script>
+</body>
+</html>
